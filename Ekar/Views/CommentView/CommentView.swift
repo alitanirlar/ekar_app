@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CommentViewDelegate: AnyObject {
+    func commentView(_  message: String?)
+}
+
 @IBDesignable class CommentView: UIView {
     
     //    MARK: - Outlets
@@ -14,6 +18,7 @@ import UIKit
     @IBOutlet weak var commentTextField: UITextField!
     @IBOutlet weak var bottomLineView: UIView!
     
+    weak var delegate: CommentViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,6 +49,11 @@ import UIKit
         view.backgroundColor = .clear
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
+        
+        commentTextField.delegate = self
+        commentTextField.addTarget(self,
+                                   action: #selector(textFieldDidChange),
+                                   for: .editingChanged)
     }
     
     
@@ -52,8 +62,15 @@ import UIKit
                              lineColor: UIColor = .systemGray5) {
         titleLabel.text = title
         commentTextField.placeholder = placeholder
+
         bottomLineView.backgroundColor = lineColor
-        
     }
     
+    @objc private func textFieldDidChange() {
+        delegate?.commentView(commentTextField.text)
+    }
+    
+}
+
+extension CommentView: UITextFieldDelegate {
 }

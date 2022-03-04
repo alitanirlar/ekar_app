@@ -84,6 +84,7 @@ final class OnBoardViewController: BaseViewController {
         photosView.backgroundColor = .white
         photosView.delegate = self
         commentView.backgroundColor = .white
+        commentView.delegate = self
         
         submitButton.configure(title: "Submit")
         explanationLabel.text = "Please upload clear photos of the vehicle to avoid liability of any damages cause before starting reservation"
@@ -123,8 +124,12 @@ extension OnBoardViewController: PhotosViewDelegate {
         scrollView.contentSize = CGSize(width: self.view.frame.width,
                                         height: scrollView.frame.size.height)
     }
-    
-    
 }
 
+
+extension OnBoardViewController: CommentViewDelegate {
+    func commentView(_ message: String?) {
+        print(message)
+    }
+}
 

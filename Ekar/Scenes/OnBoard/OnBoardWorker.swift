@@ -8,12 +8,16 @@
 import Foundation
 
 final class OnBoardWorker {
-  
-  // MARK: - Private Properties
-  
-  //
-
-  // MARK: - Working Logic
-  
-  //
+    
+    // MARK: - Private Properties
+    
+    //
+    
+    // MARK: - Working Logic
+    func postComment(request: OnBoardModels.Comments.Request, completion: @escaping(Bool) -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            completion(true)
+        }
+    }
+    //
 }

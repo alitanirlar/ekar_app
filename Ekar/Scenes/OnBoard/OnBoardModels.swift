@@ -22,4 +22,18 @@ enum OnBoardModels {
             let list: [Photo]
         }
     }
+    
+    enum Comments {
+        struct Request {
+            let value: String?
+        }
+        
+        struct Response {
+            let value: String
+        }
+        
+        struct ViewModel {
+            let value: String
+        }
+    }
 }

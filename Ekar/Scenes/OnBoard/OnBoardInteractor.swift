@@ -10,6 +10,7 @@ import UIKit
 
 protocol OnBoardBusinessLogic {
     func fetchPhotos(request: OnBoardModels.Photos.Request)
+    func sendComment(request: OnBoardModels.Comments.Request)
 }
 
 protocol OnBoardDataStore {
@@ -36,6 +37,20 @@ final class OnBoardInteractor: OnBoardBusinessLogic, OnBoardDataStore {
         
         let response = OnBoardModels.Photos.Response(list: data)
         presenter?.presentPhotos(response: response)
+    }
+    
+    func sendComment(request: OnBoardModels.Comments.Request) {
+        if let comment = request.value, comment != "" {
+            worker.postComment(request: request) { [weak self ] success in
+                if success {
+                    self?.presenter?.presentPostCommentSuccess(response: GenericResponseModels.Message.Response(message: "Thank you for choosing ekar"))
+                }
+            }
+        } else {
+            let response = GenericResponseModels.Message.Response(message: "Please leave a comment")
+            presenter?.presentError(response: response)
+            
+        }
     }
     //
 }

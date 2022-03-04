@@ -62,13 +62,17 @@ protocol CommentViewDelegate: AnyObject {
                              lineColor: UIColor = .systemGray5) {
         titleLabel.text = title
         commentTextField.placeholder = placeholder
-
         bottomLineView.backgroundColor = lineColor
+    }
+    public func clear(with placeholder: String) {
+        commentTextField.text = nil
+        commentTextField.placeholder = placeholder
     }
     
     @objc private func textFieldDidChange() {
         delegate?.commentView(commentTextField.text)
     }
+    
     
 }
 

@@ -55,4 +55,12 @@ class BaseViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func display(title: String,
+                 message: String) {
+        
+        ViewUtils.displayMessage(title: title,
+                                 message: message,
+                                 vc: self)
+    }
+    
 }

@@ -9,6 +9,8 @@ import UIKit
 
 protocol OnBoardPresentationLogic {
     func presentPhotos(response: OnBoardModels.Photos.Response)
+    func presentPostCommentSuccess(response: GenericResponseModels.Message.Response)
+    func presentError(response: GenericResponseModels.Message.Response)
 }
 
 final class OnBoardPresenter: OnBoardPresentationLogic {
@@ -26,5 +28,14 @@ final class OnBoardPresenter: OnBoardPresentationLogic {
         let viewModel = OnBoardModels.Photos.ViewModel(list: response.list)
         viewController?.displayPhotos(viewModel: viewModel)
     }
+    
+    func presentError(response: GenericResponseModels.Message.Response) {
+        let viewModel = GenericResponseModels.Message.ViewModel(title: "Error", message: response.message)
+        viewController?.displayError(viewModel: viewModel)
+    }
+    
+    func presentPostCommentSuccess(response: GenericResponseModels.Message.Response) {
+        let viewModel = GenericResponseModels.Message.ViewModel(title: "Success",  message: response.message)
+        viewController?.displayCommentSuccess(viewModel: viewModel)    }
     //
 }

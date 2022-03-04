@@ -9,6 +9,8 @@ import UIKit
 
 protocol OnBoardDisplayLogic: AnyObject {
     func displayPhotos(viewModel: OnBoardModels.Photos.ViewModel)
+    func displayCommentSuccess(viewModel: GenericResponseModels.Message.ViewModel)
+    func displayError(viewModel: GenericResponseModels.Message.ViewModel)
 }
 
 final class OnBoardViewController: BaseViewController {
@@ -29,6 +31,7 @@ final class OnBoardViewController: BaseViewController {
     var router: (OnBoardRoutingLogic & OnBoardDataPassing)?
     
     // MARK: - Private Properties
+    private var comment: String?
     
     //
     
@@ -94,7 +97,8 @@ final class OnBoardViewController: BaseViewController {
     
     // MARK: - UI Actions
     @IBAction func didTapSubmitButton(_ sender: Any) {
-        print("Submit")
+        let request = OnBoardModels.Comments.Request(value: comment)
+        interactor?.sendComment(request: request)
     }
     
     //
@@ -105,6 +109,18 @@ final class OnBoardViewController: BaseViewController {
 extension OnBoardViewController: OnBoardDisplayLogic {
     func displayPhotos(viewModel: OnBoardModels.Photos.ViewModel) {
         photosView.setInitValue(data: viewModel.list)
+    }
+    
+    func displayCommentSuccess(viewModel: GenericResponseModels.Message.ViewModel) {
+        self.display(title: viewModel.message, message: viewModel.message)
+        self.comment = nil
+        self.commentView.clear(with: "Everthing looks great!")
+    }
+    
+    func displayError(viewModel: GenericResponseModels.Message.ViewModel) {
+        self.display(title: viewModel.title,
+                     message: viewModel.message)
+        
     }
 }
 
@@ -129,7 +145,7 @@ extension OnBoardViewController: PhotosViewDelegate {
 
 extension OnBoardViewController: CommentViewDelegate {
     func commentView(_ message: String?) {
-        print(message)
+        comment = message
     }
 }
 

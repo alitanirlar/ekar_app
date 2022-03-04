@@ -52,6 +52,7 @@
 		41C8E15627D2BA84009EF417 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15527D2BA84009EF417 /* Photo.swift */; };
 		41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */; };
 		41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15927D2C6A7009EF417 /* ViewUtils.swift */; };
+		41C8E15C27D2CBFE009EF417 /* GenericResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15B27D2CBFE009EF417 /* GenericResponseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		41C8E15527D2BA84009EF417 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewDataSource+Extensions.swift"; sourceTree = "<group>"; };
 		41C8E15927D2C6A7009EF417 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		41C8E15B27D2CBFE009EF417 /* GenericResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponseModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				41AB29CA27D140FE007681C2 /* BaseViewController.swift */,
 				41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */,
 				41C8E15927D2C6A7009EF417 /* ViewUtils.swift */,
+				41C8E15B27D2CBFE009EF417 /* GenericResponseModels.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				41AB29EA27D167CD007681C2 /* Colors.swift in Sources */,
 				41AB29CF27D1560B007681C2 /* LocationAnnotationView.swift in Sources */,
 				41C8E14127D28AD0009EF417 /* BaseTableViewCell.swift in Sources */,
+				41C8E15C27D2CBFE009EF417 /* GenericResponseModels.swift in Sources */,
 				41C8E12827D2513C009EF417 /* CommentView.swift in Sources */,
 				41AB29DE27D15A76007681C2 /* OnBoardInteractor.swift in Sources */,
 				41AB29C427D11969007681C2 /* MapViewRouter.swift in Sources */,

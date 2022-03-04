@@ -109,7 +109,11 @@ extension OnBoardViewController: OnBoardDisplayLogic {
 
 extension OnBoardViewController: PhotosViewDelegate {
     func photosView(_ didSelectItem: IndexPath) {
-        
+        ViewUtils.displayMessage(title: "Attention",
+                                 message: "Please take a photo",
+                                 vc: self) { _ in
+            
+        }
     }
     
     

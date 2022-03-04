@@ -51,6 +51,7 @@
 		41C8E15127D2B888009EF417 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */; };
 		41C8E15627D2BA84009EF417 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15527D2BA84009EF417 /* Photo.swift */; };
 		41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */; };
+		41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15927D2C6A7009EF417 /* ViewUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		41C8E15527D2BA84009EF417 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewDataSource+Extensions.swift"; sourceTree = "<group>"; };
+		41C8E15927D2C6A7009EF417 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				41AB29CA27D140FE007681C2 /* BaseViewController.swift */,
 				41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */,
+				41C8E15927D2C6A7009EF417 /* ViewUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				41AB29C327D11969007681C2 /* MapViewWorker.swift in Sources */,
 				41C8E14727D292F2009EF417 /* PhotoTableViewCell.swift in Sources */,
 				41C8E12427D24EA7009EF417 /* Font.swift in Sources */,
+				41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */,
 				41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */,
 				41AB29E827D1674E007681C2 /* UIColor+Extensions.swift in Sources */,
 				41C8E12C27D252A7009EF417 /* NSObject+Extensions.swift in Sources */,

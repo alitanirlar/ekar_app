@@ -7,23 +7,10 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    
-    // MARK: - Public Properties
-    
-    // MARK: - Private Properties
-    private let logoFrame = CGRect(x: 0, y: 0, width: 74, height: 30)
-    private let backButtonFrame = CGRect(x: 0, y: 0, width: 80, height: 30)
-    
-    //
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+extension  UIViewController {
     
     func setupNavigationBar() {
-        
+        let logoFrame = CGRect(x: 0, y: 0, width: 74, height: 30)
         let logoContainer = UIView(frame: logoFrame)
         
         let imageView = UIImageView(frame: logoFrame)

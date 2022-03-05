@@ -8,9 +8,19 @@
 import UIKit
 
 extension UIStoryboard {
+  
+    public var mapView: UIStoryboard {
+        return UIStoryboard(name: "MapView", bundle: nil)
+    }
+    
     public var onBoard: UIStoryboard {
         return UIStoryboard(name: "OnBoard", bundle: nil)
     }
+    
+    public var vehicle: UIStoryboard {
+        return UIStoryboard(name: "Vehicle", bundle: nil)
+    }
+    
     
     public func instantiateViewController<T>(withIdentifier identifier: T.Type) -> T where T: UIViewController {
         let className = String(describing: identifier)

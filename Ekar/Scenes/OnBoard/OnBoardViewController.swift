@@ -13,7 +13,7 @@ protocol OnBoardDisplayLogic: AnyObject {
     func displayError(viewModel: GenericResponseModels.Message.ViewModel)
 }
 
-final class OnBoardViewController: BaseViewController {
+final class OnBoardViewController: UIViewController {
     
     // MARK: - UI Outlets
     @IBOutlet weak var scrollView: UIScrollView!

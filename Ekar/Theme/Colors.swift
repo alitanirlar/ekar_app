@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     
-    open class var mainColor : UIColor {
+    open class var primaryColor : UIColor {
         return UIColor(hex: "#32C5F4")
     }
 }

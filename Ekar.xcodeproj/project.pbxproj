@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */; };
+		411E5FBE27D3CC6800C8F05D /* VehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FB727D3CC6800C8F05D /* VehiclePresenter.swift */; };
+		411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FB827D3CC6800C8F05D /* VehicleWorker.swift */; };
+		411E5FC027D3CC6800C8F05D /* VehicleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FB927D3CC6800C8F05D /* VehicleRouter.swift */; };
+		411E5FC127D3CC6800C8F05D /* VehicleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FBA27D3CC6800C8F05D /* VehicleModels.swift */; };
+		411E5FC227D3CC6800C8F05D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FBB27D3CC6800C8F05D /* VehicleViewController.swift */; };
+		411E5FC327D3CC6800C8F05D /* VehicleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FBC27D3CC6800C8F05D /* VehicleInteractor.swift */; };
+		411E5FC527D3D04A00C8F05D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FC427D3D04A00C8F05D /* UIView+Extensions.swift */; };
+		411E5FC827D3D81800C8F05D /* VehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FC727D3D81800C8F05D /* VehicleResponse.swift */; };
+		411E5FCC27D3E0FF00C8F05D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FCB27D3E0FF00C8F05D /* ApiManager.swift */; };
+		411E5FCF27D3E12A00C8F05D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 411E5FCE27D3E12A00C8F05D /* Alamofire */; };
+		411E5FD127D3E1B100C8F05D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD027D3E1B100C8F05D /* BaseService.swift */; };
+		411E5FD327D3E26200C8F05D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD227D3E26200C8F05D /* Constants.swift */; };
+		411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -56,6 +70,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
+		411E5FB727D3CC6800C8F05D /* VehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePresenter.swift; sourceTree = "<group>"; };
+		411E5FB827D3CC6800C8F05D /* VehicleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleWorker.swift; sourceTree = "<group>"; };
+		411E5FB927D3CC6800C8F05D /* VehicleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRouter.swift; sourceTree = "<group>"; };
+		411E5FBA27D3CC6800C8F05D /* VehicleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModels.swift; sourceTree = "<group>"; };
+		411E5FBB27D3CC6800C8F05D /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		411E5FBC27D3CC6800C8F05D /* VehicleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInteractor.swift; sourceTree = "<group>"; };
+		411E5FC427D3D04A00C8F05D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		411E5FC727D3D81800C8F05D /* VehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponse.swift; sourceTree = "<group>"; };
+		411E5FCB27D3E0FF00C8F05D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		411E5FD027D3E1B100C8F05D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		411E5FD227D3E26200C8F05D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,12 +138,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C8E14E27D2A3B5009EF417 /* IQKeyboardManagerSwift in Frameworks */,
+				411E5FCF27D3E12A00C8F05D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411E5FB527D3CC5600C8F05D /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */,
+				411E5FB727D3CC6800C8F05D /* VehiclePresenter.swift */,
+				411E5FB827D3CC6800C8F05D /* VehicleWorker.swift */,
+				411E5FB927D3CC6800C8F05D /* VehicleRouter.swift */,
+				411E5FBA27D3CC6800C8F05D /* VehicleModels.swift */,
+				411E5FBB27D3CC6800C8F05D /* VehicleViewController.swift */,
+				411E5FBC27D3CC6800C8F05D /* VehicleInteractor.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		411E5FC627D3D80E00C8F05D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FC727D3D81800C8F05D /* VehicleResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		411E5FC927D3E0DA00C8F05D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FCA27D3E0E300C8F05D /* ServiceModels */,
+				411E5FCB27D3E0FF00C8F05D /* ApiManager.swift */,
+				411E5FD027D3E1B100C8F05D /* BaseService.swift */,
+				411E5FD227D3E26200C8F05D /* Constants.swift */,
+				411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		411E5FCA27D3E0E300C8F05D /* ServiceModels */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FC627D3D80E00C8F05D /* Response */,
+			);
+			path = ServiceModels;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -136,17 +206,18 @@
 		41AB29A427D118EA007681C2 /* Ekar */ = {
 			isa = PBXGroup;
 			children = (
-				41C8E15427D2BA6F009EF417 /* Models */,
-				41C8E12527D24FC9009EF417 /* Theme */,
-				41AB29DF27D15ACB007681C2 /* Extensions */,
-				41AB29C927D140F0007681C2 /* Common */,
-				41AB29CC27D155ED007681C2 /* Views */,
-				41AB29C827D11986007681C2 /* Scenes */,
+				41AB29B327D118EB007681C2 /* Info.plist */,
 				41AB29A527D118EA007681C2 /* AppDelegate.swift */,
 				41AB29A727D118EA007681C2 /* SceneDelegate.swift */,
 				41AB29AE27D118EB007681C2 /* Assets.xcassets */,
 				41AB29B027D118EB007681C2 /* LaunchScreen.storyboard */,
-				41AB29B327D118EB007681C2 /* Info.plist */,
+				41AB29C927D140F0007681C2 /* Common */,
+				41AB29DF27D15ACB007681C2 /* Extensions */,
+				41C8E15427D2BA6F009EF417 /* Models */,
+				411E5FC927D3E0DA00C8F05D /* Network */,
+				41AB29C827D11986007681C2 /* Scenes */,
+				41C8E12527D24FC9009EF417 /* Theme */,
+				41AB29CC27D155ED007681C2 /* Views */,
 			);
 			path = Ekar;
 			sourceTree = "<group>";
@@ -168,8 +239,9 @@
 		41AB29C827D11986007681C2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				41AB29D027D15A66007681C2 /* OnBoard */,
 				41AB29B927D1195E007681C2 /* MapView */,
+				41AB29D027D15A66007681C2 /* OnBoard */,
+				411E5FB527D3CC5600C8F05D /* Vehicle */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -230,6 +302,7 @@
 				41AB29E727D1674E007681C2 /* UIColor+Extensions.swift */,
 				41AB29E027D15AE0007681C2 /* UIStoryboard+Extensions.swift */,
 				41C8E14227D28C7C009EF417 /* UITableView+Extensions.swift */,
+				411E5FC427D3D04A00C8F05D /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +421,7 @@
 			name = Ekar;
 			packageProductDependencies = (
 				41C8E14D27D2A3B5009EF417 /* IQKeyboardManagerSwift */,
+				411E5FCE27D3E12A00C8F05D /* Alamofire */,
 			);
 			productName = Ekar;
 			productReference = 41AB29A227D118EA007681C2 /* Ekar.app */;
@@ -379,6 +453,7 @@
 			mainGroup = 41AB299927D118EA007681C2;
 			packageReferences = (
 				41C8E14C27D2A3B5009EF417 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 41AB29A327D118EA007681C2 /* Products */;
 			projectDirPath = "";
@@ -397,6 +472,7 @@
 				41AB29B227D118EB007681C2 /* LaunchScreen.storyboard in Resources */,
 				41C8E12A27D25146009EF417 /* CommentView.xib in Resources */,
 				41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */,
+				411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */,
 				41C8E13127D261C6009EF417 /* PhotosView.xib in Resources */,
 				41C8E13727D263DF009EF417 /* PhotoCollectionViewCell.xib in Resources */,
 				41AB29D827D15A76007681C2 /* OnBoard.storyboard in Resources */,
@@ -416,6 +492,8 @@
 				41AB29D927D15A76007681C2 /* OnBoardPresenter.swift in Sources */,
 				41C8E13627D263DF009EF417 /* PhotoCollectionViewCell.swift in Sources */,
 				41C8E12227D24C40009EF417 /* BaseLabel.swift in Sources */,
+				411E5FC327D3CC6800C8F05D /* VehicleInteractor.swift in Sources */,
+				411E5FD127D3E1B100C8F05D /* BaseService.swift in Sources */,
 				41AB29EA27D167CD007681C2 /* Colors.swift in Sources */,
 				41AB29CF27D1560B007681C2 /* LocationAnnotationView.swift in Sources */,
 				41C8E14127D28AD0009EF417 /* BaseTableViewCell.swift in Sources */,
@@ -425,24 +503,34 @@
 				41AB29C427D11969007681C2 /* MapViewRouter.swift in Sources */,
 				41C8E12F27D26176009EF417 /* PhotosView.swift in Sources */,
 				41C8E15627D2BA84009EF417 /* Photo.swift in Sources */,
+				411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */,
 				41AB29C527D11969007681C2 /* MapViewModels.swift in Sources */,
 				41C8E15127D2B888009EF417 /* CollectionViewDataSource.swift in Sources */,
 				41AB29E427D161FF007681C2 /* ActionButton.swift in Sources */,
 				41AB29DD27D15A76007681C2 /* OnBoardViewController.swift in Sources */,
 				41AB29C227D11969007681C2 /* MapViewPresenter.swift in Sources */,
+				411E5FC827D3D81800C8F05D /* VehicleResponse.swift in Sources */,
 				41AB29DA27D15A76007681C2 /* OnBoardWorker.swift in Sources */,
 				41C8E14327D28C7C009EF417 /* UITableView+Extensions.swift in Sources */,
 				41AB29C327D11969007681C2 /* MapViewWorker.swift in Sources */,
+				411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */,
+				411E5FD327D3E26200C8F05D /* Constants.swift in Sources */,
+				411E5FC527D3D04A00C8F05D /* UIView+Extensions.swift in Sources */,
 				41C8E14727D292F2009EF417 /* PhotoTableViewCell.swift in Sources */,
+				411E5FC227D3CC6800C8F05D /* VehicleViewController.swift in Sources */,
 				41C8E12427D24EA7009EF417 /* Font.swift in Sources */,
 				41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */,
 				41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */,
 				41AB29E827D1674E007681C2 /* UIColor+Extensions.swift in Sources */,
+				411E5FC127D3CC6800C8F05D /* VehicleModels.swift in Sources */,
 				41C8E12C27D252A7009EF417 /* NSObject+Extensions.swift in Sources */,
 				41AB29DC27D15A76007681C2 /* OnBoardModels.swift in Sources */,
 				41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */,
 				41AB29CB27D140FE007681C2 /* BaseViewController.swift in Sources */,
 				41AB29DB27D15A76007681C2 /* OnBoardRouter.swift in Sources */,
+				411E5FC027D3CC6800C8F05D /* VehicleRouter.swift in Sources */,
+				411E5FCC27D3E0FF00C8F05D /* ApiManager.swift in Sources */,
+				411E5FBE27D3CC6800C8F05D /* VehiclePresenter.swift in Sources */,
 				41C8E13D27D28A19009EF417 /* TextTableViewCell.swift in Sources */,
 				41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */,
 				41C8E13927D26561009EF417 /* UICollectionView+Extensions.swift in Sources */,
@@ -664,6 +752,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		41C8E14C27D2A3B5009EF417 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -675,6 +771,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		411E5FCE27D3E12A00C8F05D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		41C8E14D27D2A3B5009EF417 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 41C8E14C27D2A3B5009EF417 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;

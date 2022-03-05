@@ -19,7 +19,7 @@ class ActionButton: UIButton {
         configure()
     }
     
-    func configure(backgroundColor: UIColor = .mainColor,
+    func configure(backgroundColor: UIColor = .primaryColor,
                    cornerRadius: CGFloat = 8.0,
                    title: String = "") {
         self.backgroundColor = backgroundColor

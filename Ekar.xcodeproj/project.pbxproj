@@ -21,6 +21,8 @@
 		411E5FD127D3E1B100C8F05D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD027D3E1B100C8F05D /* BaseService.swift */; };
 		411E5FD327D3E26200C8F05D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD227D3E26200C8F05D /* Constants.swift */; };
 		411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */; };
+		411E5FD827D3FFE600C8F05D /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD727D3FFE600C8F05D /* CarouselView.swift */; };
+		411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FD927D4005300C8F05D /* CarouselView.xib */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -83,6 +85,8 @@
 		411E5FD027D3E1B100C8F05D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		411E5FD227D3E26200C8F05D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		411E5FD727D3FFE600C8F05D /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		411E5FD927D4005300C8F05D /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +191,15 @@
 			path = ServiceModels;
 			sourceTree = "<group>";
 		};
+		411E5FD627D3FFD500C8F05D /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FD727D3FFE600C8F05D /* CarouselView.swift */,
+				411E5FD927D4005300C8F05D /* CarouselView.xib */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +273,7 @@
 		41AB29CC27D155ED007681C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				411E5FD627D3FFD500C8F05D /* CarouselView */,
 				41AB29E227D161DF007681C2 /* ActionButton */,
 				41C8E12027D24C15009EF417 /* BaseLabel */,
 				41C8E13227D26397009EF417 /* CollectionViewCells */,
@@ -471,6 +485,7 @@
 			files = (
 				41AB29B227D118EB007681C2 /* LaunchScreen.storyboard in Resources */,
 				41C8E12A27D25146009EF417 /* CommentView.xib in Resources */,
+				411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */,
 				41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */,
 				411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */,
 				41C8E13127D261C6009EF417 /* PhotosView.xib in Resources */,
@@ -514,6 +529,7 @@
 				41C8E14327D28C7C009EF417 /* UITableView+Extensions.swift in Sources */,
 				41AB29C327D11969007681C2 /* MapViewWorker.swift in Sources */,
 				411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */,
+				411E5FD827D3FFE600C8F05D /* CarouselView.swift in Sources */,
 				411E5FD327D3E26200C8F05D /* Constants.swift in Sources */,
 				411E5FC527D3D04A00C8F05D /* UIView+Extensions.swift in Sources */,
 				41C8E14727D292F2009EF417 /* PhotoTableViewCell.swift in Sources */,

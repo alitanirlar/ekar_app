@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct Photo {
-    let title: String
+    var title: String? = nil
     let image: UIImage
 }

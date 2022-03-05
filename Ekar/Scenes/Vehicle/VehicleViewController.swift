@@ -15,7 +15,7 @@ protocol VehicleDisplayLogic: AnyObject {
 final class VehicleViewController: UITableViewController {
     
     // MARK: - UI Outlets
-    
+    @IBOutlet weak var carouselView: CarouselView!
     
     //
     
@@ -34,6 +34,7 @@ final class VehicleViewController: UITableViewController {
         button.addTarget(self, action: #selector(didTapProceedButton), for: .touchUpInside)
         return button
     }()
+    
     //
     
     // MARK: - Init
@@ -93,6 +94,7 @@ final class VehicleViewController: UITableViewController {
                                     paddingRight: 40,
                                     height: 50)
         
+        tableView.separatorStyle = .none
         
         
     }
@@ -111,7 +113,7 @@ final class VehicleViewController: UITableViewController {
 extension VehicleViewController: VehicleDisplayLogic {
     
     func displayVehicleSpecs(viewModel: VehicleModels.VehicleSpecs.ViewModel) {
-        print(viewModel)
+        carouselView.setInitValue(data: viewModel.carouselPhotos)
     }
     
     func displayError(viewModel: GenericResponseModels.Message.ViewModel) {

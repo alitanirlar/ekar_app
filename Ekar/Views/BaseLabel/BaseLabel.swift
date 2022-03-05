@@ -36,7 +36,7 @@ class BaseLabel: UILabel {
         self.textAlignment =  align
     }
     
-    func set(text: String) {
+    func set(text: String? = "") {
         self.text = text
     }
 }

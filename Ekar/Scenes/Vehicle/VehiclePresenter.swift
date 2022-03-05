@@ -34,7 +34,8 @@ final class VehiclePresenter: VehiclePresentationLogic {
                                                              priceUnit: "AED / MONTH",
                                                              bookFee: "120",
                                                              bookCurrency: "AED",
-                                                             carouselPhotos: [UIImage(), UIImage()])
+                                                             carouselPhotos: [Photo(image: UIImage(named: "back_left_icon") ?? UIImage()) ,
+                                                                              Photo(image: UIImage(named: "front_left_icon") ?? UIImage())])
         viewController?.displayVehicleSpecs(viewModel: viewModel)
     }
     

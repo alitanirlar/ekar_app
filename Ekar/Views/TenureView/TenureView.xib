@@ -57,7 +57,7 @@
                         <constraint firstItem="9cP-8v-SFG" firstAttribute="leading" secondItem="I6c-fb-Obg" secondAttribute="leading" constant="4" id="rOH-d2-bDd"/>
                     </constraints>
                 </view>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-m9-gsg">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-m9-gsg" customClass="Slider" customModule="Ekar" customModuleProvider="target">
                     <rect key="frame" x="-2" y="65" width="457" height="31"/>
                     <connections>
                         <action selector="didSliderValueChange:" destination="-1" eventType="valueChanged" id="qLl-4y-4in"/>

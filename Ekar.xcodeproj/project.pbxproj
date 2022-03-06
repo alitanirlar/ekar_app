@@ -31,6 +31,7 @@
 		4150143A27D4319900BB695A /* BasePriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143927D4319900BB695A /* BasePriceView.xib */; };
 		4150143D27D4384900BB695A /* TenureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143C27D4384900BB695A /* TenureView.swift */; };
 		4150143F27D4387A00BB695A /* TenureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143E27D4387A00BB695A /* TenureView.xib */; };
+		4150144227D477B200BB695A /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150144127D477B200BB695A /* Slider.swift */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -103,6 +104,7 @@
 		4150143927D4319900BB695A /* BasePriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePriceView.xib; sourceTree = "<group>"; };
 		4150143C27D4384900BB695A /* TenureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenureView.swift; sourceTree = "<group>"; };
 		4150143E27D4387A00BB695A /* TenureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenureView.xib; sourceTree = "<group>"; };
+		4150144127D477B200BB695A /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 			path = TenureView;
 			sourceTree = "<group>";
 		};
+		4150144027D477A300BB695A /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				4150144127D477B200BB695A /* Slider.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +335,7 @@
 		41AB29CC27D155ED007681C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4150144027D477A300BB695A /* Slider */,
 				4150143B27D4383A00BB695A /* TenureView */,
 				4150143627D4318100BB695A /* BasePriceView */,
 				411E5FDB27D4154600C8F05D /* ColorView */,
@@ -568,6 +579,7 @@
 				41AB29D927D15A76007681C2 /* OnBoardPresenter.swift in Sources */,
 				41C8E13627D263DF009EF417 /* PhotoCollectionViewCell.swift in Sources */,
 				41C8E12227D24C40009EF417 /* BaseLabel.swift in Sources */,
+				4150144227D477B200BB695A /* Slider.swift in Sources */,
 				411E5FC327D3CC6800C8F05D /* VehicleInteractor.swift in Sources */,
 				411E5FD127D3E1B100C8F05D /* BaseService.swift in Sources */,
 				41AB29EA27D167CD007681C2 /* Colors.swift in Sources */,

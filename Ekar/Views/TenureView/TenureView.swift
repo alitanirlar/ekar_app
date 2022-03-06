@@ -63,6 +63,12 @@ protocol TenureViewDelegate: AnyObject {
         sliderLabels.forEach{
             $0.font = UIFont(name: Font.regular, size: 10)
         }
+        
+        
+        slider.minimumValue = 1
+        slider.maximumValue = 9
+  
+
     }
     
     public func setInitValue() {

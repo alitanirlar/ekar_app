@@ -18,13 +18,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EN0-sr-8lU">
-                        <rect key="frame" x="0.0" y="0.0" width="314" height="218"/>
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="210"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ltr-vF-fVq">
-                                <rect key="frame" x="0.0" y="0.0" width="314" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="189"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chv-6n-UsG" customClass="BaseLabel" customModule="Ekar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="314" height="90"/>
+                                <rect key="frame" x="0.0" y="189" width="314" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2fn-Bt-v51"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +39,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="EN0-sr-8lU" secondAttribute="trailing" id="eQY-dW-DJK"/>
-                <constraint firstAttribute="bottom" secondItem="EN0-sr-8lU" secondAttribute="bottom" id="fQu-84-GgQ"/>
+                <constraint firstAttribute="bottom" secondItem="EN0-sr-8lU" secondAttribute="bottom" constant="8" id="fQu-84-GgQ"/>
                 <constraint firstItem="EN0-sr-8lU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jlJ-xT-2YX"/>
                 <constraint firstItem="EN0-sr-8lU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qZo-bw-tcv"/>
             </constraints>

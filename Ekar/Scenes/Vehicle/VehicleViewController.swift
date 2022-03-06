@@ -21,6 +21,8 @@ final class VehicleViewController: UIViewController {
     @IBOutlet weak var colorsView: ColorsView!
     @IBOutlet weak var basePriceView: BasePriceView!
     @IBOutlet weak var tenureView: TenureView!
+    @IBOutlet weak var bookFeeView: BookFeeView!
+    @IBOutlet weak var aboutVehicleView: AboutVehicleView!
     
     //
     
@@ -95,9 +97,19 @@ final class VehicleViewController: UIViewController {
         basePriceView.backgroundColor = .clear
         tenureView.backgroundColor = .clear
         tenureView.delegate = self
+        bookFeeView.backgroundColor = .clear
+        bookFeeView.didTapAction = {
+            ViewUtils.displayMessage(title: "How Works?",
+                                     message: "toast messages", vc: self)
+        }
         
         yearLabel.text = ""
-        yearLabel.font = UIFont(name: Font.regular, size: 12)
+        yearLabel.configure(font: UIFont(name: Font.regular, size: 12)!,
+                            textColor: .black)
+        
+ 
+        
+        
         
     }
     
@@ -123,6 +135,20 @@ extension VehicleViewController: VehicleDisplayLogic {
                                    currencyType: viewModel.priceUnit,
                                    contractUnit: "Month",
                                    contractLenght: viewModel.contractLength)
+        bookFeeView.setInitValue(currencyType: "AED", price: "120")
+        
+        
+        let data = [Photo(title: "3L Engine", image: UIImage(named: "engine_icon")),Photo(title: "2 Seats", image: UIImage(named: "seat_icon")),Photo(title: "Manual", image: UIImage(named: "gear_icon")!),Photo(title: "Petrol", image: UIImage(named: "petrol_icon"))]
+        
+        aboutVehicleView.setInitValue(data: data)
+        
+//
+//        let data2 = [Photo(title: "3L Engine"),Photo(title: "2 Seats"),Photo(title: "Manual"),Photo(title: "Petrol"),Photo(title: "Petrol"),Photo(title: "Petrol"),Photo(title: "Petrol")]
+        
+//        keyFeaturesView.setInitValue(data: data2)
+//        keyFeaturesView.customInit(title: "Key Features",
+//                                   font: UIFont(name: Font.bold, size: 12)!, height: 20)
+        
         
     }
     

@@ -12,9 +12,11 @@ extension CollectionViewDataSource where T == Photo {
     static func make(for photos: [Photo], reuseIdentifier: String, align: NSTextAlignment = .left) -> CollectionViewDataSource {
         return CollectionViewDataSource( models: photos, reuseIdentifier: reuseIdentifier ) { (photo, cell) in
             if let cell = cell as? PhotoCollectionViewCell {
-                cell.titleLabel.set(text: photo.title)
-                cell.titleLabel.set(align: align)
-                cell.photoImageView.image = photo.image
+                
+                cell.configure(title: photo.title,
+                               photo: photo.image,
+                               align: align)
+                
             }
             cell.layoutIfNeeded()
             

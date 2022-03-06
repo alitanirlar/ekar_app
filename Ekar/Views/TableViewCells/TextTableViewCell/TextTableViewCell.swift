@@ -12,7 +12,7 @@ class TextTableViewCell: BaseTableViewCell {
     @IBOutlet weak var messageLabel: BaseLabel!
     
     func set(text: String) {
-        messageLabel.set(text: text)
+        messageLabel.text = text
     }
     
 }

@@ -21,15 +21,22 @@ class ActionButton: UIButton {
     
     func configure(backgroundColor: UIColor = .primaryColor,
                    cornerRadius: CGFloat = 8.0,
-                   title: String = "") {
+                   borderWitdth: CGFloat = 0.0,
+                   borderColor: CGColor = UIColor.primaryColor.cgColor,
+                   title: String = "",
+                   titleColor: UIColor = .white,
+                   font: UIFont = UIFont(name: Font.regular,
+                                         size: 20)!) {
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
+        self.layer.borderWidth = borderWitdth
+        self.layer.borderColor = borderColor
         
         self.setTitle(title, for: .normal)
-        self.setTitleColor(.white, for: .normal)
-        self.setTitleColor(UIColor.init(white: 1.0, alpha: 0.6), for: .highlighted)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        self.setTitleColor(titleColor, for: .normal)
+        self.setTitleColor(titleColor.withAlphaComponent(0.6), for: .highlighted)
+        self.titleLabel?.font = font
         
     }
 }

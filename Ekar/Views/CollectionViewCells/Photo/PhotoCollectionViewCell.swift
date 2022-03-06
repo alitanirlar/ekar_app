@@ -15,14 +15,19 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         photoImageView.contentMode = .scaleAspectFit
+        self.layer.cornerRadius = 8.0
+        self.layer.masksToBounds = true
     }
     
     func configure(title: String? = nil,
-                   photo: UIImage) {
+                   photo: UIImage? = nil,
+                   align: NSTextAlignment = .center) {
         titleLabel.isHidden = title == nil
+        photoImageView.isHidden = photo == nil
         titleLabel.text = title
-        titleLabel.set(align: .center)
+        titleLabel.textAlignment = align
         photoImageView.image = photo
+        self.backgroundColor = .secondaryColor
     }
     
 }

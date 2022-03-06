@@ -56,9 +56,13 @@ protocol TenureViewDelegate: AnyObject {
         saleContentView.layer.cornerRadius = saleContentView.frame.height / 2.0
         saleContentView.layer.masksToBounds = true
         
-        saleLabel.text = ""
-        saleLabel.textColor = .white
-        saleLabel.font = UIFont(name: Font.regular, size: 12)
+        
+        saleLabel.configure(font: UIFont(name: Font.regular,
+                                         size: 10)!,
+                            textColor: .white)
+        saleLabel.textAlignment = .center
+        saleLabel.text = "SAVINGS OF AED 1,500"
+        
         
         sliderLabels.forEach{
             $0.font = UIFont(name: Font.regular, size: 10)
@@ -67,8 +71,8 @@ protocol TenureViewDelegate: AnyObject {
         
         slider.minimumValue = 1
         slider.maximumValue = 9
-  
-
+        
+        
     }
     
     public func setInitValue() {

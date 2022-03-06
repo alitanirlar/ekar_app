@@ -31,12 +31,4 @@ class BaseLabel: UILabel {
         self.textColor = textColor
         
     }
-    
-    func set(align: NSTextAlignment = .natural) {
-        self.textAlignment =  align
-    }
-    
-    func set(text: String? = "") {
-        self.text = text
-    }
 }

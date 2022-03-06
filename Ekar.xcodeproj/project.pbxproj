@@ -32,6 +32,10 @@
 		4150143D27D4384900BB695A /* TenureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143C27D4384900BB695A /* TenureView.swift */; };
 		4150143F27D4387A00BB695A /* TenureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143E27D4387A00BB695A /* TenureView.xib */; };
 		4150144227D477B200BB695A /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150144127D477B200BB695A /* Slider.swift */; };
+		4150144527D47BBE00BB695A /* BookFeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150144427D47BBE00BB695A /* BookFeeView.swift */; };
+		4150144727D47BF400BB695A /* BookFeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150144627D47BF400BB695A /* BookFeeView.xib */; };
+		4150144B27D4865B00BB695A /* AboutVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150144A27D4865B00BB695A /* AboutVehicleView.swift */; };
+		4150144D27D4866700BB695A /* AboutVehicleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150144C27D4866700BB695A /* AboutVehicleView.xib */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -105,6 +109,10 @@
 		4150143C27D4384900BB695A /* TenureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenureView.swift; sourceTree = "<group>"; };
 		4150143E27D4387A00BB695A /* TenureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenureView.xib; sourceTree = "<group>"; };
 		4150144127D477B200BB695A /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		4150144427D47BBE00BB695A /* BookFeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFeeView.swift; sourceTree = "<group>"; };
+		4150144627D47BF400BB695A /* BookFeeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookFeeView.xib; sourceTree = "<group>"; };
+		4150144A27D4865B00BB695A /* AboutVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVehicleView.swift; sourceTree = "<group>"; };
+		4150144C27D4866700BB695A /* AboutVehicleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutVehicleView.xib; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +270,24 @@
 			path = Slider;
 			sourceTree = "<group>";
 		};
+		4150144327D47BA600BB695A /* BookFeeView */ = {
+			isa = PBXGroup;
+			children = (
+				4150144427D47BBE00BB695A /* BookFeeView.swift */,
+				4150144627D47BF400BB695A /* BookFeeView.xib */,
+			);
+			path = BookFeeView;
+			sourceTree = "<group>";
+		};
+		4150144927D4864B00BB695A /* AboutVehicleView */ = {
+			isa = PBXGroup;
+			children = (
+				4150144A27D4865B00BB695A /* AboutVehicleView.swift */,
+				4150144C27D4866700BB695A /* AboutVehicleView.xib */,
+			);
+			path = AboutVehicleView;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +361,8 @@
 		41AB29CC27D155ED007681C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4150144927D4864B00BB695A /* AboutVehicleView */,
+				4150144327D47BA600BB695A /* BookFeeView */,
 				4150144027D477A300BB695A /* Slider */,
 				4150143B27D4383A00BB695A /* TenureView */,
 				4150143627D4318100BB695A /* BasePriceView */,
@@ -556,10 +584,12 @@
 				411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */,
 				4150143F27D4387A00BB695A /* TenureView.xib in Resources */,
 				41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */,
+				4150144727D47BF400BB695A /* BookFeeView.xib in Resources */,
 				411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */,
 				41C8E13127D261C6009EF417 /* PhotosView.xib in Resources */,
 				41C8E13727D263DF009EF417 /* PhotoCollectionViewCell.xib in Resources */,
 				41AB29D827D15A76007681C2 /* OnBoard.storyboard in Resources */,
+				4150144D27D4866700BB695A /* AboutVehicleView.xib in Resources */,
 				4150143A27D4319900BB695A /* BasePriceView.xib in Resources */,
 				4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */,
 				41C8E14827D292F2009EF417 /* PhotoTableViewCell.xib in Resources */,
@@ -591,12 +621,14 @@
 				41AB29C427D11969007681C2 /* MapViewRouter.swift in Sources */,
 				41C8E12F27D26176009EF417 /* PhotosView.swift in Sources */,
 				41C8E15627D2BA84009EF417 /* Photo.swift in Sources */,
+				4150144527D47BBE00BB695A /* BookFeeView.swift in Sources */,
 				411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */,
 				41AB29C527D11969007681C2 /* MapViewModels.swift in Sources */,
 				41C8E15127D2B888009EF417 /* CollectionViewDataSource.swift in Sources */,
 				41AB29E427D161FF007681C2 /* ActionButton.swift in Sources */,
 				41AB29DD27D15A76007681C2 /* OnBoardViewController.swift in Sources */,
 				41AB29C227D11969007681C2 /* MapViewPresenter.swift in Sources */,
+				4150144B27D4865B00BB695A /* AboutVehicleView.swift in Sources */,
 				411E5FC827D3D81800C8F05D /* VehicleResponse.swift in Sources */,
 				41AB29DA27D15A76007681C2 /* OnBoardWorker.swift in Sources */,
 				411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */,

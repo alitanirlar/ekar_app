@@ -10,5 +10,5 @@ import UIKit
 
 struct Photo {
     var title: String? = nil
-    let image: UIImage
+    var image: UIImage? = nil
 }

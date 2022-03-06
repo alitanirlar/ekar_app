@@ -11,15 +11,16 @@ import UIKit
     //    MARK: - Outlets
     @IBOutlet weak var titleLabel: BaseLabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     private var dataSource: CollectionViewDataSource<String, TagCollectionViewCell>?
-    let layout: TagFlowLayout = {
+    private let layout: TagFlowLayout = {
         let layout = TagFlowLayout()
         layout.estimatedItemSize = CGSize(width: 140, height: 24)
         return layout
         
     }()
+    
+    private var keyFeatures = [String]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -68,6 +69,7 @@ import UIKit
     
     public func setInitValue(data: [String]) {
         displayAbout(data: data)
+        keyFeatures = data
     }
     
     private func displayAbout(data: [String]) {
@@ -75,14 +77,32 @@ import UIKit
         dataSource = .make(for: data,
                               reuseIdentifier: String(describing: TagCollectionViewCell.self))
         collectionView.dataSource = dataSource
-        let height = CGFloat(data.count / 3 * 32)
-        collectionViewHeight.constant = height
         collectionView.reloadData()
     }
 
 }
 
-extension KeyFeaturesView: UICollectionViewDelegate {
+extension KeyFeaturesView: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-}
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let tag = keyFeatures[indexPath.row]
+        let font = UIFont(name: Font.regular, size: 12)!
+        let size = tag.size(withAttributes: [NSAttributedString.Key.font: font])
+        let dynamicCellWidth = size.width
 
+        /*
+          The "+ 20" gives me the padding inside the cell
+        */
+        return CGSize(width: dynamicCellWidth + 20, height: 24)
+    }
+    
+    // Space between rows
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+    
+    // Space between cells
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+}

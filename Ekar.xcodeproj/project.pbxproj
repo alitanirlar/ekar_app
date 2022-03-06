@@ -292,9 +292,9 @@
 		41A1752C27D4981A003B001E /* KeyFeaturesView */ = {
 			isa = PBXGroup;
 			children = (
+				41A1753627D49EFD003B001E /* TagFollowLayout.swift */,
 				41A1752D27D49833003B001E /* KeyFeaturesView.swift */,
 				41A1752E27D49833003B001E /* KeyFeaturesView.xib */,
-				41A1753627D49EFD003B001E /* TagFollowLayout.swift */,
 			);
 			path = KeyFeaturesView;
 			sourceTree = "<group>";

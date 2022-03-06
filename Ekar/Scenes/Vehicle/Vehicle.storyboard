@@ -39,47 +39,47 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ez5-wX-yRD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="956"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0z-ga-eS0">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="556"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTy-UN-KVI" customClass="CarouselView" customModule="Ekar" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="JwL-0n-Kjp"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pI-BC-CLg" customClass="BaseLabel" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="200" width="42" height="16"/>
+                                                        <rect key="frame" x="20" y="200" width="42" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-F2-IiK" customClass="ColorsView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="70" y="196" width="324" height="24"/>
+                                                        <rect key="frame" x="70" y="208" width="324" height="24"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="mI9-G5-gEG"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYN-vU-Q8d" customClass="BasePriceView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="236" width="374" height="100"/>
+                                                        <rect key="frame" x="20" y="252" width="374" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="qjR-Ss-o5C"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-Re-ibr" customClass="TenureView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="344" width="374" height="100"/>
+                                                        <rect key="frame" x="20" y="360" width="374" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="BTh-ex-iJL"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-Yr-MnA" customClass="BookFeeView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="452" width="374" height="80"/>
+                                                        <rect key="frame" x="20" y="468" width="374" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="2mW-Vw-HEm"/>
@@ -91,7 +91,7 @@
                                                     <constraint firstItem="MYN-vU-Q8d" firstAttribute="leading" secondItem="G0z-ga-eS0" secondAttribute="leading" constant="20" id="1Vt-b2-ldp"/>
                                                     <constraint firstItem="cTy-UN-KVI" firstAttribute="top" secondItem="G0z-ga-eS0" secondAttribute="top" id="31e-lP-daH"/>
                                                     <constraint firstItem="MKL-Yr-MnA" firstAttribute="leading" secondItem="G0z-ga-eS0" secondAttribute="leading" constant="20" id="B1A-rK-r9g"/>
-                                                    <constraint firstAttribute="height" constant="540" id="Cvb-Bv-StW"/>
+                                                    <constraint firstAttribute="height" constant="556" id="Cvb-Bv-StW"/>
                                                     <constraint firstAttribute="trailing" secondItem="kXn-F2-IiK" secondAttribute="trailing" constant="20" id="Ftu-xf-KoQ"/>
                                                     <constraint firstItem="kXn-F2-IiK" firstAttribute="centerY" secondItem="4pI-BC-CLg" secondAttribute="centerY" id="H01-te-BOr"/>
                                                     <constraint firstAttribute="trailing" secondItem="MKL-Yr-MnA" secondAttribute="trailing" constant="20" id="MUt-Ol-7OK"/>
@@ -101,49 +101,51 @@
                                                     <constraint firstItem="4pI-BC-CLg" firstAttribute="top" secondItem="cTy-UN-KVI" secondAttribute="bottom" id="TjB-Kr-G76"/>
                                                     <constraint firstAttribute="bottom" secondItem="MKL-Yr-MnA" secondAttribute="bottom" constant="8" id="X5t-Um-HTh"/>
                                                     <constraint firstAttribute="trailing" secondItem="xMQ-Re-ibr" secondAttribute="trailing" constant="20" id="Xfr-K3-0B7"/>
-                                                    <constraint firstItem="MYN-vU-Q8d" firstAttribute="top" secondItem="kXn-F2-IiK" secondAttribute="bottom" constant="16" id="a4W-Kz-o2Y"/>
+                                                    <constraint firstItem="MYN-vU-Q8d" firstAttribute="top" secondItem="kXn-F2-IiK" secondAttribute="bottom" constant="20" id="a4W-Kz-o2Y"/>
                                                     <constraint firstItem="xMQ-Re-ibr" firstAttribute="leading" secondItem="G0z-ga-eS0" secondAttribute="leading" constant="20" id="aL4-8y-1lg"/>
                                                     <constraint firstAttribute="trailing" secondItem="cTy-UN-KVI" secondAttribute="trailing" id="qX6-lz-NgV"/>
                                                     <constraint firstItem="MKL-Yr-MnA" firstAttribute="top" secondItem="xMQ-Re-ibr" secondAttribute="bottom" constant="8" id="qtI-JA-TLX"/>
                                                     <constraint firstItem="4pI-BC-CLg" firstAttribute="leading" secondItem="G0z-ga-eS0" secondAttribute="leading" constant="20" id="v2D-QE-Mj6"/>
+                                                    <constraint firstItem="kXn-F2-IiK" firstAttribute="top" secondItem="cTy-UN-KVI" secondAttribute="bottom" constant="8" id="xdm-26-Itx"/>
                                                     <constraint firstAttribute="trailing" secondItem="MYN-vU-Q8d" secondAttribute="trailing" constant="20" id="y0d-uI-omG"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22z-e3-C0J">
-                                                <rect key="frame" x="0.0" y="540" width="414" height="400"/>
+                                                <rect key="frame" x="0.0" y="556" width="414" height="400"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-gh-I26" customClass="AboutVehicleView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="8" width="374" height="120"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <rect key="frame" x="20" y="8" width="374" height="116"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="120" id="i39-6Y-d42"/>
+                                                            <constraint firstAttribute="height" constant="116" id="i39-6Y-d42"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-qy-nvc" customClass="KeyFeaturesView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="168" width="374" height="100"/>
+                                                        <rect key="frame" x="20" y="144" width="374" height="96"/>
                                                         <color key="backgroundColor" systemColor="tintColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="5ah-Wa-dNQ"/>
+                                                            <constraint firstAttribute="height" constant="96" id="5ah-Wa-dNQ"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-dV-4pc" customClass="BrandView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="288" width="334" height="100"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aic-IQ-XeM" customClass="BrandView" customModule="Ekar" customModuleProvider="target">
+                                                        <rect key="frame" x="40" y="260" width="334" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="GzW-iW-3V7"/>
+                                                            <constraint firstAttribute="height" constant="100" id="E0O-Hl-hfC"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="ZOQ-dV-4pc" firstAttribute="top" secondItem="IW1-qy-nvc" secondAttribute="bottom" constant="20" id="64s-Hz-tfG"/>
                                                     <constraint firstAttribute="trailing" secondItem="IW1-qy-nvc" secondAttribute="trailing" constant="20" id="6vi-u9-Yjo"/>
+                                                    <constraint firstItem="aic-IQ-XeM" firstAttribute="top" secondItem="IW1-qy-nvc" secondAttribute="bottom" constant="20" id="CjU-nQ-O5o"/>
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="Cyb-5c-VsW"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ZOQ-dV-4pc" secondAttribute="trailing" constant="40" id="Hfp-TG-DCM"/>
+                                                    <constraint firstItem="aic-IQ-XeM" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="40" id="KnW-Ph-exr"/>
                                                     <constraint firstItem="IW1-qy-nvc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="WC0-iY-B1e"/>
-                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="top" secondItem="SFJ-gh-I26" secondAttribute="bottom" constant="40" id="b2z-7C-zWp"/>
+                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="top" secondItem="SFJ-gh-I26" secondAttribute="bottom" constant="20" id="b2z-7C-zWp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aic-IQ-XeM" secondAttribute="bottom" constant="40" id="gcw-Mf-LiH"/>
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="top" secondItem="22z-e3-C0J" secondAttribute="top" constant="8" id="lD0-4b-bI9"/>
-                                                    <constraint firstItem="ZOQ-dV-4pc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="40" id="qmY-t0-zWf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aic-IQ-XeM" secondAttribute="trailing" constant="40" id="mwQ-o7-iLj"/>
                                                     <constraint firstAttribute="trailing" secondItem="SFJ-gh-I26" secondAttribute="trailing" constant="20" id="v20-Pu-8Oz"/>
                                                     <constraint firstAttribute="height" constant="400" id="v4c-iY-D4E"/>
                                                 </constraints>
@@ -209,7 +211,7 @@
                         <outlet property="basePriceView" destination="MYN-vU-Q8d" id="F93-qG-fFF"/>
                         <outlet property="bookFeeView" destination="MKL-Yr-MnA" id="827-0S-mN2"/>
                         <outlet property="bottomContentViewHeight" destination="v4c-iY-D4E" id="Jye-og-xUr"/>
-                        <outlet property="brandView" destination="ZOQ-dV-4pc" id="G3g-Ry-nDY"/>
+                        <outlet property="brandView" destination="aic-IQ-XeM" id="9hh-sg-VDl"/>
                         <outlet property="carouselView" destination="cTy-UN-KVI" id="E95-XD-KT2"/>
                         <outlet property="colorsView" destination="kXn-F2-IiK" id="THt-YD-oG9"/>
                         <outlet property="contentView" destination="ez5-wX-yRD" id="D3n-fX-ARH"/>
@@ -237,11 +239,17 @@
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

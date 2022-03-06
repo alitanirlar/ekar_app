@@ -26,9 +26,9 @@ final class VehicleViewController: UIViewController {
     @IBOutlet weak var bookFeeView: BookFeeView!
     @IBOutlet weak var aboutVehicleView: AboutVehicleView!
     @IBOutlet weak var keyFeaturesView: KeyFeaturesView!
+    @IBOutlet weak var keyFeaturesHeight: NSLayoutConstraint!
     @IBOutlet weak var brandView: BrandView!
     @IBOutlet weak var proceedButton: ActionButton!
-    @IBOutlet weak var keyFeaturesHeight: NSLayoutConstraint!
     @IBOutlet weak var bottomContentViewHeight: NSLayoutConstraint!
     
     //
@@ -101,7 +101,7 @@ final class VehicleViewController: UIViewController {
             ViewUtils.displayMessage(title: "How Works?",
                                      message: "toast messages", vc: self)
         }
-        
+
         yearLabel.text = ""
         yearLabel.configure(font: UIFont(name: Font.regular, size: 12)!,
                             textColor: .black)
@@ -140,8 +140,9 @@ extension VehicleViewController: VehicleDisplayLogic {
         
         aboutVehicleView.setInitValue(data: viewModel.aboutData)
         keyFeaturesView.setInitValue(data: viewModel.keyFeatures)
-        keyFeaturesHeight.constant = CGFloat(100 + (viewModel.keyFeatures.count / 3 * 32))
-        bottomContentViewHeight.constant += (keyFeaturesHeight.constant - 100)
+        keyFeaturesHeight.constant = CGFloat(Int(keyFeaturesHeight.constant) + (viewModel.keyFeatures.count / 3 * 16))
+
+        bottomContentViewHeight.constant += (keyFeaturesHeight.constant - 96)
         brandView.setInitValue(logo: viewModel.logo,
                                make: viewModel.make,
                                model: viewModel.model,

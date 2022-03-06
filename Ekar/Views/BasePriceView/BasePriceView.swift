@@ -18,8 +18,6 @@ import UIKit
     @IBOutlet weak var contractLengthLabel: BaseLabel!
     
     
-    weak var delegate: CommentViewDelegate?
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()

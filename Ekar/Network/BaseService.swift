@@ -18,7 +18,7 @@ public class BaseService {
                                                   parameters: params,
                                                   encoding: URLEncoding.default)
             .validate(statusCode: 200..<299).responseDecodable(of: T.self) { response in
-                NetworkLogger.log(data: response.data, response: response.response, error: response.error)
+//                NetworkLogger.log(data: response.data, response: response.response, error: response.error)
 
                 switch response.result {
                 case .success(let results):

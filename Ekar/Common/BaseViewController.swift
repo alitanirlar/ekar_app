@@ -7,7 +7,11 @@
 
 import UIKit
 
-extension  UIViewController {
+class BaseViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     func setupNavigationBar() {
         let logoFrame = CGRect(x: 0, y: 0, width: 74, height: 30)
@@ -32,13 +36,13 @@ extension  UIViewController {
     
     func setupBackButton() {
         let backChevron = UIImage(named: "back_icon")?.withTintColor(.black, renderingMode: .alwaysOriginal)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:backChevron,
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: backChevron,
                                                                 style: .done,
                                                                 target: self,
-                                                                action: #selector(self.popViewController))
+                                                                action: #selector(self.didTapBackButton))
     }
     
-    @objc private func popViewController()  {
+    @objc func didTapBackButton()  {
         self.navigationController?.popViewController(animated: true)
     }
     

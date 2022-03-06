@@ -12,7 +12,7 @@ protocol VehicleDisplayLogic: AnyObject {
     func displayError(viewModel: GenericResponseModels.Message.ViewModel)
 }
 
-final class VehicleViewController: UIViewController {
+final class VehicleViewController: BaseViewController {
     
     // MARK: - UI Outlets
     @IBOutlet weak var scrollView: UIScrollView!
@@ -109,6 +109,7 @@ final class VehicleViewController: UIViewController {
         keyFeaturesView.backgroundColor = .clear
         brandView.backgroundColor = .clear
         proceedButton.configure(title: "proceed.button.title".localized, titleColor: .white, font: UIFont(name: Font.bold, size: 14)!)
+        proceedButton.addTarget(self, action: #selector(didTapProceedButton), for: .touchUpInside)
  
     }
     
@@ -116,6 +117,9 @@ final class VehicleViewController: UIViewController {
     // MARK: - UI Actions
     
     @objc func didTapProceedButton() {
+        router?.routeToMapView()
+    }
+    override func didTapBackButton() {
         router?.routeToMapView()
     }
     //

@@ -13,7 +13,7 @@ protocol OnBoardDisplayLogic: AnyObject {
     func displayError(viewModel: GenericResponseModels.Message.ViewModel)
 }
 
-final class OnBoardViewController: UIViewController {
+final class OnBoardViewController: BaseViewController {
     
     // MARK: - UI Outlets
     @IBOutlet weak var scrollView: UIScrollView!
@@ -99,6 +99,10 @@ final class OnBoardViewController: UIViewController {
     @IBAction func didTapSubmitButton(_ sender: Any) {
         let request = OnBoardModels.Comments.Request(value: comment)
         interactor?.sendComment(request: request)
+    }
+    
+    @objc override func didTapBackButton() {
+        router?.routeToVehicle()
     }
     
     //

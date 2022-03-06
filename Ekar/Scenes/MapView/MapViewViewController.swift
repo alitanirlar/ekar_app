@@ -15,7 +15,7 @@ protocol MapViewDisplayLogic: AnyObject {
     
 }
 
-final class MapViewViewController: UIViewController {
+final class MapViewViewController: BaseViewController {
     
     // MARK: - UI Outlets
     

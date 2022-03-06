@@ -1,5 +1,5 @@
 //
-//  Photo.swift
+//  Item.swift
 //  Ekar
 //
 //  Created by Ali TANIRLAR on 5.03.2022.

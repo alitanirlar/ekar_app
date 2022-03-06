@@ -7,11 +7,11 @@
 
 import UIKit
 
-class CollectionViewDataSource<T>: NSObject, UICollectionViewDataSource {
+class CollectionViewDataSource<T, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
     
-    typealias CellConfigurator = (T, PhotoCollectionViewCell) -> Void
+    typealias CellConfigurator = (T, Cell) -> Void
     
-    var models: [T]
+    var models: [T] = []
     
     private let reuseIdentifier: String
     private let cellConfigurator: CellConfigurator
@@ -30,8 +30,8 @@ class CollectionViewDataSource<T>: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = models[indexPath.row]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cellConfigurator(model, cell as! PhotoCollectionViewCell)
+        let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! Cell
+        cellConfigurator(model, cell)
         return cell
     }
     

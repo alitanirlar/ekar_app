@@ -31,6 +31,7 @@ enum VehicleModels {
             let bookFee: String
             let bookCurrency: String
             let carouselPhotos: [Photo]
+            let colors: [UIColor]
         }
     }
 }

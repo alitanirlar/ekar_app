@@ -12,10 +12,15 @@ protocol VehicleDisplayLogic: AnyObject {
     func displayError(viewModel: GenericResponseModels.Message.ViewModel)
 }
 
-final class VehicleViewController: UITableViewController {
+final class VehicleViewController: UIViewController {
     
     // MARK: - UI Outlets
+    @IBOutlet weak var upContentView: UIView!
     @IBOutlet weak var carouselView: CarouselView!
+    @IBOutlet weak var yearLabel: BaseLabel!
+    @IBOutlet weak var colorsView: ColorsView!
+    @IBOutlet weak var basePriceView: BasePriceView!
+    @IBOutlet weak var tenureView: TenureView!
     
     //
     
@@ -85,17 +90,14 @@ final class VehicleViewController: UITableViewController {
     private func configure() {
         setupNavigationBar()
         setupBackButton()
-        tableView.addSubview(proceedButton)
-        proceedButton.addConstraint(bottom: tableView.safeAreaLayoutGuide.bottomAnchor,
-                                    paddingBottom: 20,
-                                    left: tableView.safeAreaLayoutGuide.leftAnchor,
-                                    paddingLeft: 40,
-                                    right: tableView.safeAreaLayoutGuide.rightAnchor,
-                                    paddingRight: 40,
-                                    height: 50)
+        carouselView.backgroundColor = .clear
+        colorsView.backgroundColor = .clear
+        basePriceView.backgroundColor = .clear
+        tenureView.backgroundColor = .clear
+        tenureView.delegate = self
         
-        tableView.separatorStyle = .none
-        
+        yearLabel.text = ""
+        yearLabel.font = UIFont(name: Font.regular, size: 12)
         
     }
     
@@ -113,10 +115,26 @@ final class VehicleViewController: UITableViewController {
 extension VehicleViewController: VehicleDisplayLogic {
     
     func displayVehicleSpecs(viewModel: VehicleModels.VehicleSpecs.ViewModel) {
+        upContentView.backgroundColor = .secondaryColor
         carouselView.setInitValue(data: viewModel.carouselPhotos)
+        colorsView.setInitValue(data: viewModel.colors)
+        yearLabel.text = viewModel.year
+        basePriceView.setInitValue(price: viewModel.basePrice,
+                                   currencyType: viewModel.priceUnit,
+                                   contractUnit: "Month",
+                                   contractLenght: viewModel.contractLength)
+        
     }
     
     func displayError(viewModel: GenericResponseModels.Message.ViewModel) {
         display(title: viewModel.title, message: viewModel.message)
     }
+}
+
+extension VehicleViewController: TenureViewDelegate {
+    func tenureView(_ sliderValue: Int) {
+        basePriceView.setContract(length: sliderValue.description)
+    }
+    
+    
 }

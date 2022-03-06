@@ -9,17 +9,30 @@ import Foundation
 import UIKit
 
 extension CollectionViewDataSource where T == Photo {
-    static func make(for photos: [Photo],
-                     reuseIdentifier: String,
-                     align: NSTextAlignment = .left) -> CollectionViewDataSource {
-        return CollectionViewDataSource(
-            models: photos,
-            reuseIdentifier: reuseIdentifier
-        ) { (photo, cell) in
+    static func make(for photos: [Photo], reuseIdentifier: String, align: NSTextAlignment = .left) -> CollectionViewDataSource {
+        return CollectionViewDataSource( models: photos, reuseIdentifier: reuseIdentifier ) { (photo, cell) in
+            if let cell = cell as? PhotoCollectionViewCell {
+                cell.titleLabel.set(text: photo.title)
+                cell.titleLabel.set(align: align)
+                cell.photoImageView.image = photo.image
+            }
+            cell.layoutIfNeeded()
             
-            cell.titleLabel.set(text: photo.title)
-            cell.titleLabel.set(align: align)
-            cell.photoImageView.image = photo.image
         }
     }
+}
+
+
+extension CollectionViewDataSource where T == UIColor {
+    static func make(for colors: [UIColor], reuseIdentifier: String) -> CollectionViewDataSource {
+        
+        return CollectionViewDataSource( models: colors, reuseIdentifier: reuseIdentifier) { (color, cell) in
+            if let cell = cell as? ColorCollectionViewCell {
+                cell.set(color: color)
+            }
+            cell.layoutIfNeeded()
+            
+        }
+    }
+    
 }

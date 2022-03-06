@@ -23,6 +23,14 @@
 		411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */; };
 		411E5FD827D3FFE600C8F05D /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD727D3FFE600C8F05D /* CarouselView.swift */; };
 		411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FD927D4005300C8F05D /* CarouselView.xib */; };
+		411E5FDD27D4155200C8F05D /* ColorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FDC27D4155200C8F05D /* ColorsView.xib */; };
+		411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FDE27D4156C00C8F05D /* ColorsView.swift */; };
+		4150143427D428B800BB695A /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143227D428B800BB695A /* ColorCollectionViewCell.swift */; };
+		4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143327D428B800BB695A /* ColorCollectionViewCell.xib */; };
+		4150143827D4319000BB695A /* BasePriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143727D4319000BB695A /* BasePriceView.swift */; };
+		4150143A27D4319900BB695A /* BasePriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143927D4319900BB695A /* BasePriceView.xib */; };
+		4150143D27D4384900BB695A /* TenureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143C27D4384900BB695A /* TenureView.swift */; };
+		4150143F27D4387A00BB695A /* TenureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143E27D4387A00BB695A /* TenureView.xib */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -87,6 +95,14 @@
 		411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		411E5FD727D3FFE600C8F05D /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		411E5FD927D4005300C8F05D /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		411E5FDC27D4155200C8F05D /* ColorsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorsView.xib; sourceTree = "<group>"; };
+		411E5FDE27D4156C00C8F05D /* ColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
+		4150143227D428B800BB695A /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		4150143327D428B800BB695A /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		4150143727D4319000BB695A /* BasePriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePriceView.swift; sourceTree = "<group>"; };
+		4150143927D4319900BB695A /* BasePriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePriceView.xib; sourceTree = "<group>"; };
+		4150143C27D4384900BB695A /* TenureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenureView.swift; sourceTree = "<group>"; };
+		4150143E27D4387A00BB695A /* TenureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenureView.xib; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +216,42 @@
 			path = CarouselView;
 			sourceTree = "<group>";
 		};
+		411E5FDB27D4154600C8F05D /* ColorView */ = {
+			isa = PBXGroup;
+			children = (
+				411E5FDC27D4155200C8F05D /* ColorsView.xib */,
+				411E5FDE27D4156C00C8F05D /* ColorsView.swift */,
+			);
+			path = ColorView;
+			sourceTree = "<group>";
+		};
+		411E5FE027D41EB600C8F05D /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				4150143227D428B800BB695A /* ColorCollectionViewCell.swift */,
+				4150143327D428B800BB695A /* ColorCollectionViewCell.xib */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		4150143627D4318100BB695A /* BasePriceView */ = {
+			isa = PBXGroup;
+			children = (
+				4150143727D4319000BB695A /* BasePriceView.swift */,
+				4150143927D4319900BB695A /* BasePriceView.xib */,
+			);
+			path = BasePriceView;
+			sourceTree = "<group>";
+		};
+		4150143B27D4383A00BB695A /* TenureView */ = {
+			isa = PBXGroup;
+			children = (
+				4150143C27D4384900BB695A /* TenureView.swift */,
+				4150143E27D4387A00BB695A /* TenureView.xib */,
+			);
+			path = TenureView;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +325,9 @@
 		41AB29CC27D155ED007681C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4150143B27D4383A00BB695A /* TenureView */,
+				4150143627D4318100BB695A /* BasePriceView */,
+				411E5FDB27D4154600C8F05D /* ColorView */,
 				411E5FD627D3FFD500C8F05D /* CarouselView */,
 				41AB29E227D161DF007681C2 /* ActionButton */,
 				41C8E12027D24C15009EF417 /* BaseLabel */,
@@ -367,6 +422,7 @@
 		41C8E13227D26397009EF417 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				411E5FE027D41EB600C8F05D /* Color */,
 				41C8E13327D263A6009EF417 /* Photo */,
 			);
 			path = CollectionViewCells;
@@ -484,13 +540,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AB29B227D118EB007681C2 /* LaunchScreen.storyboard in Resources */,
+				411E5FDD27D4155200C8F05D /* ColorsView.xib in Resources */,
 				41C8E12A27D25146009EF417 /* CommentView.xib in Resources */,
 				411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */,
+				4150143F27D4387A00BB695A /* TenureView.xib in Resources */,
 				41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */,
 				411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */,
 				41C8E13127D261C6009EF417 /* PhotosView.xib in Resources */,
 				41C8E13727D263DF009EF417 /* PhotoCollectionViewCell.xib in Resources */,
 				41AB29D827D15A76007681C2 /* OnBoard.storyboard in Resources */,
+				4150143A27D4319900BB695A /* BasePriceView.xib in Resources */,
+				4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */,
 				41C8E14827D292F2009EF417 /* PhotoTableViewCell.xib in Resources */,
 				41C8E13E27D28A19009EF417 /* TextTableViewCell.xib in Resources */,
 				41AB29C127D11969007681C2 /* MapView.storyboard in Resources */,
@@ -504,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4150143427D428B800BB695A /* ColorCollectionViewCell.swift in Sources */,
 				41AB29D927D15A76007681C2 /* OnBoardPresenter.swift in Sources */,
 				41C8E13627D263DF009EF417 /* PhotoCollectionViewCell.swift in Sources */,
 				41C8E12227D24C40009EF417 /* BaseLabel.swift in Sources */,
@@ -526,6 +587,7 @@
 				41AB29C227D11969007681C2 /* MapViewPresenter.swift in Sources */,
 				411E5FC827D3D81800C8F05D /* VehicleResponse.swift in Sources */,
 				41AB29DA27D15A76007681C2 /* OnBoardWorker.swift in Sources */,
+				411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */,
 				41C8E14327D28C7C009EF417 /* UITableView+Extensions.swift in Sources */,
 				41AB29C327D11969007681C2 /* MapViewWorker.swift in Sources */,
 				411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */,
@@ -533,6 +595,7 @@
 				411E5FD327D3E26200C8F05D /* Constants.swift in Sources */,
 				411E5FC527D3D04A00C8F05D /* UIView+Extensions.swift in Sources */,
 				41C8E14727D292F2009EF417 /* PhotoTableViewCell.swift in Sources */,
+				4150143827D4319000BB695A /* BasePriceView.swift in Sources */,
 				411E5FC227D3CC6800C8F05D /* VehicleViewController.swift in Sources */,
 				41C8E12427D24EA7009EF417 /* Font.swift in Sources */,
 				41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */,
@@ -547,6 +610,7 @@
 				411E5FC027D3CC6800C8F05D /* VehicleRouter.swift in Sources */,
 				411E5FCC27D3E0FF00C8F05D /* ApiManager.swift in Sources */,
 				411E5FBE27D3CC6800C8F05D /* VehiclePresenter.swift in Sources */,
+				4150143D27D4384900BB695A /* TenureView.swift in Sources */,
 				41C8E13D27D28A19009EF417 /* TextTableViewCell.swift in Sources */,
 				41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */,
 				41C8E13927D26561009EF417 /* UICollectionView+Extensions.swift in Sources */,

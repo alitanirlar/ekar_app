@@ -22,7 +22,7 @@ protocol PhotosViewDelegate: AnyObject {
     
     
     
-    private var dataSource: CollectionViewDataSource<Photo>?
+    private var dataSource: CollectionViewDataSource<Photo, PhotoCollectionViewCell>?
     private let compositionalLayout: UICollectionViewCompositionalLayout = {
         let fraction: CGFloat = 1 / 2
         let inset: CGFloat = 2.5

@@ -13,33 +13,16 @@ import UIKit
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    private var dataSource: CollectionViewDataSource<Photo>?
+    private var dataSource: CollectionViewDataSource<Photo, PhotoCollectionViewCell>?
     
-    func generateLayout() -> UICollectionViewCompositionalLayout {
-        let width: CGFloat = 1
-        let height: CGFloat = 1
-        let inset: CGFloat = 2.5
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(width),
-                                              heightDimension: .fractionalHeight(height))
-        
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset + 20, trailing: inset)
-        
-        
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(width),
-                                               heightDimension: .fractionalWidth(height))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        
-        
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
-        section.orthogonalScrollingBehavior = .paging
-        section.visibleItemsInvalidationHandler = { [weak self] visibleItems, point, environment in
-            self?.pageControl.currentPage = visibleItems.last!.indexPath.row
-        }
-        
-        return UICollectionViewCompositionalLayout(section: section)
-    }
+    let flowLayout: UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 5
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        return layout
+    }()
     
     
     override init(frame: CGRect) {
@@ -67,9 +50,9 @@ import UIKit
         self.addSubview(view)
         
         collectionView.registerCustom(customCell: PhotoCollectionViewCell.self)
-        collectionView.collectionViewLayout = generateLayout()
-        collectionView.isScrollEnabled = false
+        collectionView.collectionViewLayout = flowLayout
         collectionView.delegate = self
+        collectionView.backgroundColor = .clear
         
         pageControl.numberOfPages = 0
         pageControl.currentPage = 0
@@ -91,10 +74,31 @@ import UIKit
     }
 }
 
-
+// MARK: - UICollectionViewDelegate
 extension CarouselView: UICollectionViewDelegate {
     
 }
 
 
+// MARK: - UICollectionViewDelegateFlowLayout
 
+extension CarouselView: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width
+        let numberOfItemsPerRow: CGFloat = 1
+        let spacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing ?? 0
+        let availableWidth = width - spacing * (numberOfItemsPerRow + 1)
+        let itemDimension = floor(availableWidth / numberOfItemsPerRow)
+        return CGSize(width: itemDimension, height: itemDimension)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let visibleRect = CGRect(origin: self.collectionView.contentOffset, size: self.collectionView.bounds.size)
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        if let visibleIndexPath = self.collectionView.indexPathForItem(at: visiblePoint) {
+            self.pageControl.currentPage = visibleIndexPath.row
+        }
+    }
+    
+}

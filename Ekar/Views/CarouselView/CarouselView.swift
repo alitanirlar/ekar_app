@@ -85,12 +85,12 @@ extension CarouselView: UICollectionViewDelegate {
 extension CarouselView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width
+        let width = self.collectionView.bounds.width
         let numberOfItemsPerRow: CGFloat = 1
         let spacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing ?? 0
-        let availableWidth = width - spacing * (numberOfItemsPerRow + 1)
-        let itemDimension = floor(availableWidth / numberOfItemsPerRow)
-        return CGSize(width: itemDimension, height: itemDimension)
+        let height = collectionView.bounds.height - spacing * (numberOfItemsPerRow + 1)
+        return CGSize(width: width, height: height);
+
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

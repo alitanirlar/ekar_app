@@ -11,6 +11,7 @@ import UIKit
     //    MARK: - Outlets
     @IBOutlet weak var titleLabel: BaseLabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     private var dataSource: CollectionViewDataSource<String, TagCollectionViewCell>?
     let layout: TagFlowLayout = {
@@ -74,6 +75,8 @@ import UIKit
         dataSource = .make(for: data,
                               reuseIdentifier: String(describing: TagCollectionViewCell.self))
         collectionView.dataSource = dataSource
+        let height = CGFloat(data.count / 3 * 32)
+        collectionViewHeight.constant = height
         collectionView.reloadData()
     }
 

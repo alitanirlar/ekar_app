@@ -113,21 +113,21 @@
                                                 <rect key="frame" x="0.0" y="540" width="414" height="400"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-gh-I26" customClass="AboutVehicleView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="8" width="374" height="100"/>
+                                                        <rect key="frame" x="20" y="8" width="374" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="i39-6Y-d42"/>
+                                                            <constraint firstAttribute="height" constant="120" id="i39-6Y-d42"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-qy-nvc" customClass="KeyFeaturesView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="128" width="374" height="100"/>
+                                                        <rect key="frame" x="20" y="168" width="374" height="100"/>
                                                         <color key="backgroundColor" systemColor="tintColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="5ah-Wa-dNQ"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-dV-4pc" customClass="BrandView" customModule="Ekar" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="248" width="334" height="100"/>
+                                                        <rect key="frame" x="40" y="288" width="334" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="GzW-iW-3V7"/>
@@ -141,7 +141,7 @@
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="Cyb-5c-VsW"/>
                                                     <constraint firstAttribute="trailing" secondItem="ZOQ-dV-4pc" secondAttribute="trailing" constant="40" id="Hfp-TG-DCM"/>
                                                     <constraint firstItem="IW1-qy-nvc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="WC0-iY-B1e"/>
-                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="top" secondItem="SFJ-gh-I26" secondAttribute="bottom" constant="20" id="b2z-7C-zWp"/>
+                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="top" secondItem="SFJ-gh-I26" secondAttribute="bottom" constant="40" id="b2z-7C-zWp"/>
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="top" secondItem="22z-e3-C0J" secondAttribute="top" constant="8" id="lD0-4b-bI9"/>
                                                     <constraint firstItem="ZOQ-dV-4pc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="40" id="qmY-t0-zWf"/>
                                                     <constraint firstAttribute="trailing" secondItem="SFJ-gh-I26" secondAttribute="trailing" constant="20" id="v20-Pu-8Oz"/>
@@ -208,11 +208,15 @@
                         <outlet property="aboutVehicleView" destination="SFJ-gh-I26" id="s8n-f4-EOD"/>
                         <outlet property="basePriceView" destination="MYN-vU-Q8d" id="F93-qG-fFF"/>
                         <outlet property="bookFeeView" destination="MKL-Yr-MnA" id="827-0S-mN2"/>
+                        <outlet property="bottomContentViewHeight" destination="v4c-iY-D4E" id="Jye-og-xUr"/>
                         <outlet property="brandView" destination="ZOQ-dV-4pc" id="G3g-Ry-nDY"/>
                         <outlet property="carouselView" destination="cTy-UN-KVI" id="E95-XD-KT2"/>
                         <outlet property="colorsView" destination="kXn-F2-IiK" id="THt-YD-oG9"/>
+                        <outlet property="contentView" destination="ez5-wX-yRD" id="D3n-fX-ARH"/>
+                        <outlet property="keyFeaturesHeight" destination="5ah-Wa-dNQ" id="VNo-hd-OCF"/>
                         <outlet property="keyFeaturesView" destination="IW1-qy-nvc" id="3ZN-6Z-b5r"/>
                         <outlet property="proceedButton" destination="kMZ-gs-EtO" id="Vf0-fu-Jad"/>
+                        <outlet property="scrollView" destination="SYv-Ov-DES" id="MGv-7z-oXt"/>
                         <outlet property="tenureView" destination="xMQ-Re-ibr" id="Wg9-J9-FKF"/>
                         <outlet property="upContentView" destination="G0z-ga-eS0" id="S6c-Lu-7pk"/>
                         <outlet property="yearLabel" destination="4pI-BC-CLg" id="z2u-Yf-uL0"/>

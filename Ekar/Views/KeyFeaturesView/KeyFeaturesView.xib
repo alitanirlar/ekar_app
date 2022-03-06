@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyFeaturesView" customModule="Ekar" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="R1B-YR-czK" id="qkf-zQ-K1w"/>
+                <outlet property="collectionViewHeight" destination="v5D-nf-7xm" id="geW-jj-ZCv"/>
                 <outlet property="titleLabel" destination="Noo-pS-icF" id="bjd-mE-HFH"/>
             </connections>
         </placeholder>
@@ -22,15 +23,18 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-pS-icF" customClass="BaseLabel" customModule="Ekar" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eA6-Wv-Qw0"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="R1B-YR-czK">
-                    <rect key="frame" x="0.0" y="41" width="530" height="64"/>
+                    <rect key="frame" x="0.0" y="41" width="530" height="197"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="v5D-nf-7xm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="v5D-nf-7xm"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nwa-p7-f7x">
                         <size key="itemSize" width="128" height="128"/>
@@ -48,6 +52,7 @@
                 <constraint firstItem="Noo-pS-icF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ViE-Jo-vzc"/>
                 <constraint firstItem="Noo-pS-icF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bbQ-h7-0Vn"/>
                 <constraint firstItem="R1B-YR-czK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tzF-Vi-kIz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="R1B-YR-czK" secondAttribute="bottom" id="yA1-bF-ec4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="221.73913043478262" y="-54.619565217391312"/>

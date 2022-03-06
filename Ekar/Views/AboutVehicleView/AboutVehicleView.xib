@@ -17,20 +17,23 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="479" height="151"/>
+            <rect key="frame" x="0.0" y="0.0" width="479" height="187"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt0-m5-8TA" customClass="BaseLabel" customModule="Ekar" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bOr-Z6-MiG"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uhw-3X-fLx">
-                    <rect key="frame" x="0.0" y="29" width="479" height="94"/>
+                    <rect key="frame" x="0.0" y="29" width="479" height="158"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="94" id="fXw-9Y-Efm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="fXw-9Y-Efm"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J1R-ix-2Ii">
                         <size key="itemSize" width="128" height="128"/>
@@ -43,6 +46,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uhw-3X-fLx" secondAttribute="bottom" id="45s-g8-gBL"/>
                 <constraint firstItem="Nt0-m5-8TA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8kC-jM-YBk"/>
                 <constraint firstItem="uhw-3X-fLx" firstAttribute="top" secondItem="Nt0-m5-8TA" secondAttribute="bottom" constant="8" symbolic="YES" id="LGJ-zF-t2X"/>
                 <constraint firstItem="uhw-3X-fLx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kog-c7-N8j"/>
@@ -50,7 +54,7 @@
                 <constraint firstItem="Nt0-m5-8TA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zsx-03-DBq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="221.59999999999999" y="-83.208395802098963"/>
+            <point key="canvasLocation" x="221.59999999999999" y="-67.016491754122939"/>
         </view>
     </objects>
     <resources>

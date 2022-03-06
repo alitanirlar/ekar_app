@@ -25,13 +25,21 @@ enum VehicleModels {
             let make: String
             let model: String
             let logo: UIImage
+            let style: String
             let contractLength: String
+            let contractUnit: String
             let basePrice: String
             let priceUnit: String
             let bookFee: String
             let bookCurrency: String
             let carouselPhotos: [Photo]
             let colors: [UIColor]
+            let aboutData: [Photo]
+            let keyFeatures: [String]
+            
+            
         }
     }
 }
+
+

@@ -15,6 +15,8 @@ protocol VehicleDisplayLogic: AnyObject {
 final class VehicleViewController: UIViewController {
     
     // MARK: - UI Outlets
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var upContentView: UIView!
     @IBOutlet weak var carouselView: CarouselView!
     @IBOutlet weak var yearLabel: BaseLabel!
@@ -26,6 +28,8 @@ final class VehicleViewController: UIViewController {
     @IBOutlet weak var keyFeaturesView: KeyFeaturesView!
     @IBOutlet weak var brandView: BrandView!
     @IBOutlet weak var proceedButton: ActionButton!
+    @IBOutlet weak var keyFeaturesHeight: NSLayoutConstraint!
+    @IBOutlet weak var bottomContentViewHeight: NSLayoutConstraint!
     
     //
     
@@ -86,6 +90,7 @@ final class VehicleViewController: UIViewController {
     private func configure() {
         setupNavigationBar()
         setupBackButton()
+        contentView.isHidden = true
         carouselView.backgroundColor = .clear
         colorsView.backgroundColor = .clear
         basePriceView.backgroundColor = .clear
@@ -121,26 +126,27 @@ final class VehicleViewController: UIViewController {
 extension VehicleViewController: VehicleDisplayLogic {
     
     func displayVehicleSpecs(viewModel: VehicleModels.VehicleSpecs.ViewModel) {
+        contentView.isHidden = false
         upContentView.backgroundColor = .secondaryColor
         carouselView.setInitValue(data: viewModel.carouselPhotos)
         colorsView.setInitValue(data: viewModel.colors)
         yearLabel.text = viewModel.year
         basePriceView.setInitValue(price: viewModel.basePrice,
                                    currencyType: viewModel.priceUnit,
-                                   contractUnit: "Month",
+                                   contractUnit: viewModel.contractUnit,
                                    contractLenght: viewModel.contractLength)
-        bookFeeView.setInitValue(currencyType: "AED", price: "120")
+        bookFeeView.setInitValue(currencyType: viewModel.bookCurrency,
+                                 price: viewModel.bookFee)
         
+        aboutVehicleView.setInitValue(data: viewModel.aboutData)
+        keyFeaturesView.setInitValue(data: viewModel.keyFeatures)
+        keyFeaturesHeight.constant = CGFloat(100 + (viewModel.keyFeatures.count / 3 * 32))
+        bottomContentViewHeight.constant += (keyFeaturesHeight.constant - 100)
+        brandView.setInitValue(logo: viewModel.logo,
+                               make: viewModel.make,
+                               model: viewModel.model,
+                               style: viewModel.style)
         
-        let data = [Photo(title: "3L Engine", image: UIImage(named: "engine_icon")),Photo(title: "2 Seats", image: UIImage(named: "seat_icon")),Photo(title: "Manual", image: UIImage(named: "gear_icon")!),Photo(title: "Petrol", image: UIImage(named: "petrol_icon"))]
-        
-        aboutVehicleView.setInitValue(data: data)
-        
-
-        let data2 = [ "3L Engine 3L Engine", "2 Seats 3L Engine", "Manual","Petrol","Petrol","Petrol","Petrol"]
-        keyFeaturesView.setInitValue(data: data2)
-        
-        brandView.setInitValue(logo: UIImage(named: "engine_icon")!, make: "Nissan", model: "Micra", style: "HATCHBACK")
         
         
     }

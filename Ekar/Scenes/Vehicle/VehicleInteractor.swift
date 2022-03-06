@@ -42,3 +42,24 @@ final class VehicleInteractor: VehicleBusinessLogic, VehicleDataStore {
     
     //
 }
+
+
+/*
+ 
+ basePriceView.setInitValue(price: viewModel.basePrice,
+                            currencyType: viewModel.priceUnit,
+                            contractUnit: "Month",
+                            contractLenght: viewModel.contractLength)
+ bookFeeView.setInitValue(currencyType: "AED", price: "120")
+ 
+ 
+ let data = [Photo(title: "3L Engine", image: UIImage(named: "engine_icon")),Photo(title: "2 Seats", image: UIImage(named: "seat_icon")),Photo(title: "Manual", image: UIImage(named: "gear_icon")!),Photo(title: "Petrol", image: UIImage(named: "petrol_icon"))]
+ 
+ aboutVehicleView.setInitValue(data: data)
+ 
+
+ let data2 = [ "3L Engine 3L Engine", "2 Seats 3L Engine", "Manual","Petrol","Petrol","Petrol","Petrol"]
+ keyFeaturesView.setInitValue(data: data2)
+ 
+ brandView.setInitValue(logo: UIImage(named: "engine_icon")!, make: "Nissan", model: "Micra", style: "HATCHBACK")
+ */

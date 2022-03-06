@@ -10,37 +10,14 @@ import UIKit
 @IBDesignable class ColorsView: UIView {
     
     //    MARK: - Outlets
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var collectionViewWidth: NSLayoutConstraint!
+
     @IBOutlet weak var titleLabel: UILabel!
-    
-    private var dataSource: CollectionViewDataSource<UIColor, ColorCollectionViewCell>?
-    private let compositionalLayout: UICollectionViewCompositionalLayout = {
-        let fraction: CGFloat = 1
-        let inset: CGFloat = 1
-        
-        // Item
-        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(8), heightDimension: .absolute(8))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
-        
-        // Group
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(fraction))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        
-        // Section
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
-        
-        
-        return UICollectionViewCompositionalLayout(section: section)
-    }()
-    
-    
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -61,11 +38,8 @@ import UIKit
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
         
-        collectionView.registerCustom(customCell: ColorCollectionViewCell.self)
-        collectionView.collectionViewLayout = compositionalLayout
-        collectionView.isScrollEnabled = false
-        collectionView.delegate = self
-        collectionView.backgroundColor = .clear
+        stackView.spacing = 4.0
+        stackView.distribution = .fillEqually
         
         titleLabel.text = ""
     }
@@ -78,17 +52,13 @@ import UIKit
         
         titleLabel.text = "Available colors"
         titleLabel.font = UIFont(name: Font.regular, size: 12)
-        dataSource = .make(for: data,
-                              reuseIdentifier: String(describing: ColorCollectionViewCell.self))
-        collectionView.dataSource = dataSource
-        collectionViewWidth.constant = CGFloat(data.count * 12)
-        collectionView.reloadData()
+        stackViewWidth.constant = CGFloat((data.count - 1) * 16)
+        data.forEach {
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 8))
+            view.backgroundColor = $0
+            view.layer.cornerRadius = 4
+            stackView.addArrangedSubview(view)
+        }
     }
 }
-
-
-extension ColorsView: UICollectionViewDelegate {
-    
-}
-
 

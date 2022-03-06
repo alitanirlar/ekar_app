@@ -25,8 +25,6 @@
 		411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FD927D4005300C8F05D /* CarouselView.xib */; };
 		411E5FDD27D4155200C8F05D /* ColorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FDC27D4155200C8F05D /* ColorsView.xib */; };
 		411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FDE27D4156C00C8F05D /* ColorsView.swift */; };
-		4150143427D428B800BB695A /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143227D428B800BB695A /* ColorCollectionViewCell.swift */; };
-		4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143327D428B800BB695A /* ColorCollectionViewCell.xib */; };
 		4150143827D4319000BB695A /* BasePriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143727D4319000BB695A /* BasePriceView.swift */; };
 		4150143A27D4319900BB695A /* BasePriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150143927D4319900BB695A /* BasePriceView.xib */; };
 		4150143D27D4384900BB695A /* TenureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150143C27D4384900BB695A /* TenureView.swift */; };
@@ -109,8 +107,6 @@
 		411E5FD927D4005300C8F05D /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		411E5FDC27D4155200C8F05D /* ColorsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorsView.xib; sourceTree = "<group>"; };
 		411E5FDE27D4156C00C8F05D /* ColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
-		4150143227D428B800BB695A /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
-		4150143327D428B800BB695A /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		4150143727D4319000BB695A /* BasePriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePriceView.swift; sourceTree = "<group>"; };
 		4150143927D4319900BB695A /* BasePriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePriceView.xib; sourceTree = "<group>"; };
 		4150143C27D4384900BB695A /* TenureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenureView.swift; sourceTree = "<group>"; };
@@ -247,15 +243,6 @@
 				411E5FDE27D4156C00C8F05D /* ColorsView.swift */,
 			);
 			path = ColorView;
-			sourceTree = "<group>";
-		};
-		411E5FE027D41EB600C8F05D /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				4150143227D428B800BB695A /* ColorCollectionViewCell.swift */,
-				4150143327D428B800BB695A /* ColorCollectionViewCell.xib */,
-			);
-			path = Color;
 			sourceTree = "<group>";
 		};
 		4150143627D4318100BB695A /* BasePriceView */ = {
@@ -506,7 +493,6 @@
 			isa = PBXGroup;
 			children = (
 				41A1753127D49903003B001E /* Tag */,
-				411E5FE027D41EB600C8F05D /* Color */,
 				41C8E13327D263A6009EF417 /* Photo */,
 			);
 			path = CollectionViewCells;
@@ -639,7 +625,6 @@
 				4150143A27D4319900BB695A /* BasePriceView.xib in Resources */,
 				41A1753027D49833003B001E /* KeyFeaturesView.xib in Resources */,
 				41A1753527D4990D003B001E /* TagCollectionViewCell.xib in Resources */,
-				4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */,
 				41C8E14827D292F2009EF417 /* PhotoTableViewCell.xib in Resources */,
 				41C8E13E27D28A19009EF417 /* TextTableViewCell.xib in Resources */,
 				41AB29C127D11969007681C2 /* MapView.storyboard in Resources */,
@@ -653,7 +638,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4150143427D428B800BB695A /* ColorCollectionViewCell.swift in Sources */,
 				41AB29D927D15A76007681C2 /* OnBoardPresenter.swift in Sources */,
 				41C8E13627D263DF009EF417 /* PhotoCollectionViewCell.swift in Sources */,
 				41C8E12227D24C40009EF417 /* BaseLabel.swift in Sources */,

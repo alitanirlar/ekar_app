@@ -24,22 +24,6 @@ extension CollectionViewDataSource where T == Photo {
     }
 }
 
-
-extension CollectionViewDataSource where T == UIColor {
-    static func make(for colors: [UIColor], reuseIdentifier: String) -> CollectionViewDataSource {
-        
-        return CollectionViewDataSource( models: colors, reuseIdentifier: reuseIdentifier) { (color, cell) in
-            if let cell = cell as? ColorCollectionViewCell {
-                cell.set(color: color)
-            }
-            cell.layoutIfNeeded()
-            
-        }
-    }
-    
-}
-
-
 extension CollectionViewDataSource where T == String {
     static func make(for tags: [String], reuseIdentifier: String) -> CollectionViewDataSource {
         

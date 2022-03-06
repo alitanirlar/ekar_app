@@ -36,6 +36,13 @@
 		4150144727D47BF400BB695A /* BookFeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150144627D47BF400BB695A /* BookFeeView.xib */; };
 		4150144B27D4865B00BB695A /* AboutVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150144A27D4865B00BB695A /* AboutVehicleView.swift */; };
 		4150144D27D4866700BB695A /* AboutVehicleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150144C27D4866700BB695A /* AboutVehicleView.xib */; };
+		41A1752F27D49833003B001E /* KeyFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1752D27D49833003B001E /* KeyFeaturesView.swift */; };
+		41A1753027D49833003B001E /* KeyFeaturesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A1752E27D49833003B001E /* KeyFeaturesView.xib */; };
+		41A1753427D4990D003B001E /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1753227D4990D003B001E /* TagCollectionViewCell.swift */; };
+		41A1753527D4990D003B001E /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A1753327D4990D003B001E /* TagCollectionViewCell.xib */; };
+		41A1753727D49EFD003B001E /* TagFollowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1753627D49EFD003B001E /* TagFollowLayout.swift */; };
+		41A1753A27D4A0E2003B001E /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A1753927D4A0E2003B001E /* BrandView.swift */; };
+		41A1753C27D4A124003B001E /* BrandView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A1753B27D4A124003B001E /* BrandView.xib */; };
 		41AB29A627D118EA007681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A527D118EA007681C2 /* AppDelegate.swift */; };
 		41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB29A727D118EA007681C2 /* SceneDelegate.swift */; };
 		41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AB29AE27D118EB007681C2 /* Assets.xcassets */; };
@@ -113,6 +120,13 @@
 		4150144627D47BF400BB695A /* BookFeeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookFeeView.xib; sourceTree = "<group>"; };
 		4150144A27D4865B00BB695A /* AboutVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVehicleView.swift; sourceTree = "<group>"; };
 		4150144C27D4866700BB695A /* AboutVehicleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutVehicleView.xib; sourceTree = "<group>"; };
+		41A1752D27D49833003B001E /* KeyFeaturesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyFeaturesView.swift; sourceTree = "<group>"; };
+		41A1752E27D49833003B001E /* KeyFeaturesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyFeaturesView.xib; sourceTree = "<group>"; };
+		41A1753227D4990D003B001E /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		41A1753327D4990D003B001E /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		41A1753627D49EFD003B001E /* TagFollowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFollowLayout.swift; sourceTree = "<group>"; };
+		41A1753927D4A0E2003B001E /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
+		41A1753B27D4A124003B001E /* BrandView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandView.xib; sourceTree = "<group>"; };
 		41AB29A227D118EA007681C2 /* Ekar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AB29A527D118EA007681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AB29A727D118EA007681C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +302,34 @@
 			path = AboutVehicleView;
 			sourceTree = "<group>";
 		};
+		41A1752C27D4981A003B001E /* KeyFeaturesView */ = {
+			isa = PBXGroup;
+			children = (
+				41A1752D27D49833003B001E /* KeyFeaturesView.swift */,
+				41A1752E27D49833003B001E /* KeyFeaturesView.xib */,
+				41A1753627D49EFD003B001E /* TagFollowLayout.swift */,
+			);
+			path = KeyFeaturesView;
+			sourceTree = "<group>";
+		};
+		41A1753127D49903003B001E /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				41A1753227D4990D003B001E /* TagCollectionViewCell.swift */,
+				41A1753327D4990D003B001E /* TagCollectionViewCell.xib */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		41A1753827D4A0D6003B001E /* BrandView */ = {
+			isa = PBXGroup;
+			children = (
+				41A1753927D4A0E2003B001E /* BrandView.swift */,
+				41A1753B27D4A124003B001E /* BrandView.xib */,
+			);
+			path = BrandView;
+			sourceTree = "<group>";
+		};
 		41AB299927D118EA007681C2 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +403,8 @@
 		41AB29CC27D155ED007681C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41A1753827D4A0D6003B001E /* BrandView */,
+				41A1752C27D4981A003B001E /* KeyFeaturesView */,
 				4150144927D4864B00BB695A /* AboutVehicleView */,
 				4150144327D47BA600BB695A /* BookFeeView */,
 				4150144027D477A300BB695A /* Slider */,
@@ -461,6 +505,7 @@
 		41C8E13227D26397009EF417 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				41A1753127D49903003B001E /* Tag */,
 				411E5FE027D41EB600C8F05D /* Color */,
 				41C8E13327D263A6009EF417 /* Photo */,
 			);
@@ -590,7 +635,10 @@
 				41C8E13727D263DF009EF417 /* PhotoCollectionViewCell.xib in Resources */,
 				41AB29D827D15A76007681C2 /* OnBoard.storyboard in Resources */,
 				4150144D27D4866700BB695A /* AboutVehicleView.xib in Resources */,
+				41A1753C27D4A124003B001E /* BrandView.xib in Resources */,
 				4150143A27D4319900BB695A /* BasePriceView.xib in Resources */,
+				41A1753027D49833003B001E /* KeyFeaturesView.xib in Resources */,
+				41A1753527D4990D003B001E /* TagCollectionViewCell.xib in Resources */,
 				4150143527D428B800BB695A /* ColorCollectionViewCell.xib in Resources */,
 				41C8E14827D292F2009EF417 /* PhotoTableViewCell.xib in Resources */,
 				41C8E13E27D28A19009EF417 /* TextTableViewCell.xib in Resources */,
@@ -618,8 +666,10 @@
 				41C8E15C27D2CBFE009EF417 /* GenericResponseModels.swift in Sources */,
 				41C8E12827D2513C009EF417 /* CommentView.swift in Sources */,
 				41AB29DE27D15A76007681C2 /* OnBoardInteractor.swift in Sources */,
+				41A1753427D4990D003B001E /* TagCollectionViewCell.swift in Sources */,
 				41AB29C427D11969007681C2 /* MapViewRouter.swift in Sources */,
 				41C8E12F27D26176009EF417 /* PhotosView.swift in Sources */,
+				41A1752F27D49833003B001E /* KeyFeaturesView.swift in Sources */,
 				41C8E15627D2BA84009EF417 /* Photo.swift in Sources */,
 				4150144527D47BBE00BB695A /* BookFeeView.swift in Sources */,
 				411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */,
@@ -630,6 +680,7 @@
 				41AB29C227D11969007681C2 /* MapViewPresenter.swift in Sources */,
 				4150144B27D4865B00BB695A /* AboutVehicleView.swift in Sources */,
 				411E5FC827D3D81800C8F05D /* VehicleResponse.swift in Sources */,
+				41A1753727D49EFD003B001E /* TagFollowLayout.swift in Sources */,
 				41AB29DA27D15A76007681C2 /* OnBoardWorker.swift in Sources */,
 				411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */,
 				41C8E14327D28C7C009EF417 /* UITableView+Extensions.swift in Sources */,
@@ -654,6 +705,7 @@
 				411E5FC027D3CC6800C8F05D /* VehicleRouter.swift in Sources */,
 				411E5FCC27D3E0FF00C8F05D /* ApiManager.swift in Sources */,
 				411E5FBE27D3CC6800C8F05D /* VehiclePresenter.swift in Sources */,
+				41A1753A27D4A0E2003B001E /* BrandView.swift in Sources */,
 				4150143D27D4384900BB695A /* TenureView.swift in Sources */,
 				41C8E13D27D28A19009EF417 /* TextTableViewCell.swift in Sources */,
 				41AB29A827D118EA007681C2 /* SceneDelegate.swift in Sources */,

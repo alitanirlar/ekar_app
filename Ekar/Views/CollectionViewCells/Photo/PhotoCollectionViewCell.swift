@@ -19,7 +19,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         self.layer.masksToBounds = true
     }
     
-    func configure(title: String? = nil,
+    func set(title: String? = nil,
                    photo: UIImage? = nil,
                    align: NSTextAlignment = .center) {
         titleLabel.isHidden = title == nil

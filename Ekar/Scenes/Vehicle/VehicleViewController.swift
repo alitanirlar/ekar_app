@@ -23,6 +23,9 @@ final class VehicleViewController: UIViewController {
     @IBOutlet weak var tenureView: TenureView!
     @IBOutlet weak var bookFeeView: BookFeeView!
     @IBOutlet weak var aboutVehicleView: AboutVehicleView!
+    @IBOutlet weak var keyFeaturesView: KeyFeaturesView!
+    @IBOutlet weak var brandView: BrandView!
+    @IBOutlet weak var proceedButton: ActionButton!
     
     //
     
@@ -32,15 +35,6 @@ final class VehicleViewController: UIViewController {
     var router: (VehicleRoutingLogic & VehicleDataPassing)?
     
     // MARK: - Private Properties
-    var proceedButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .primaryColor
-        button.setTitle("Proceed with your selection", for: .normal)
-        button.titleLabel?.font = UIFont(name: Font.medium, size: 14)
-        button.layer.cornerRadius = 8.0
-        button.addTarget(self, action: #selector(didTapProceedButton), for: .touchUpInside)
-        return button
-    }()
     
     //
     
@@ -106,11 +100,11 @@ final class VehicleViewController: UIViewController {
         yearLabel.text = ""
         yearLabel.configure(font: UIFont(name: Font.regular, size: 12)!,
                             textColor: .black)
-        
+        aboutVehicleView.backgroundColor = .clear
+        keyFeaturesView.backgroundColor = .clear
+        brandView.backgroundColor = .clear
+        proceedButton.configure(title: "Proceed with your selection", titleColor: .white, font: UIFont(name: Font.bold, size: 14)!)
  
-        
-        
-        
     }
     
     
@@ -142,12 +136,11 @@ extension VehicleViewController: VehicleDisplayLogic {
         
         aboutVehicleView.setInitValue(data: data)
         
-//
-//        let data2 = [Photo(title: "3L Engine"),Photo(title: "2 Seats"),Photo(title: "Manual"),Photo(title: "Petrol"),Photo(title: "Petrol"),Photo(title: "Petrol"),Photo(title: "Petrol")]
+
+        let data2 = [ "3L Engine 3L Engine", "2 Seats 3L Engine", "Manual","Petrol","Petrol","Petrol","Petrol"]
+        keyFeaturesView.setInitValue(data: data2)
         
-//        keyFeaturesView.setInitValue(data: data2)
-//        keyFeaturesView.customInit(title: "Key Features",
-//                                   font: UIFont(name: Font.bold, size: 12)!, height: 20)
+        brandView.setInitValue(logo: UIImage(named: "engine_icon")!, make: "Nissan", model: "Micra", style: "HATCHBACK")
         
         
     }

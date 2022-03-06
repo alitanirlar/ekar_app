@@ -119,11 +119,31 @@
                                                             <constraint firstAttribute="height" constant="100" id="i39-6Y-d42"/>
                                                         </constraints>
                                                     </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-qy-nvc" customClass="KeyFeaturesView" customModule="Ekar" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="128" width="374" height="100"/>
+                                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="5ah-Wa-dNQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-dV-4pc" customClass="BrandView" customModule="Ekar" customModuleProvider="target">
+                                                        <rect key="frame" x="40" y="248" width="334" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="GzW-iW-3V7"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="ZOQ-dV-4pc" firstAttribute="top" secondItem="IW1-qy-nvc" secondAttribute="bottom" constant="20" id="64s-Hz-tfG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IW1-qy-nvc" secondAttribute="trailing" constant="20" id="6vi-u9-Yjo"/>
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="Cyb-5c-VsW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZOQ-dV-4pc" secondAttribute="trailing" constant="40" id="Hfp-TG-DCM"/>
+                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="20" id="WC0-iY-B1e"/>
+                                                    <constraint firstItem="IW1-qy-nvc" firstAttribute="top" secondItem="SFJ-gh-I26" secondAttribute="bottom" constant="20" id="b2z-7C-zWp"/>
                                                     <constraint firstItem="SFJ-gh-I26" firstAttribute="top" secondItem="22z-e3-C0J" secondAttribute="top" constant="8" id="lD0-4b-bI9"/>
+                                                    <constraint firstItem="ZOQ-dV-4pc" firstAttribute="leading" secondItem="22z-e3-C0J" secondAttribute="leading" constant="40" id="qmY-t0-zWf"/>
                                                     <constraint firstAttribute="trailing" secondItem="SFJ-gh-I26" secondAttribute="trailing" constant="20" id="v20-Pu-8Oz"/>
                                                     <constraint firstAttribute="height" constant="400" id="v4c-iY-D4E"/>
                                                 </constraints>
@@ -148,14 +168,37 @@
                                     <constraint firstItem="ez5-wX-yRD" firstAttribute="trailing" secondItem="SYv-Ov-DES" secondAttribute="trailing" id="nsP-jk-xtM"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOu-Gm-mis">
+                                <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMZ-gs-EtO" customClass="ActionButton" customModule="Ekar" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="42C-Ou-Pnv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="VUM-r3-49B"/>
+                                    <constraint firstItem="kMZ-gs-EtO" firstAttribute="top" secondItem="zOu-Gm-mis" secondAttribute="top" id="j6b-xR-3q7"/>
+                                    <constraint firstAttribute="trailing" secondItem="kMZ-gs-EtO" secondAttribute="trailing" constant="40" id="uQP-Lp-ijn"/>
+                                    <constraint firstItem="kMZ-gs-EtO" firstAttribute="leading" secondItem="zOu-Gm-mis" secondAttribute="leading" constant="40" id="uyE-bN-twj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qbZ-WE-fjx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zOu-Gm-mis" secondAttribute="trailing" id="96Z-ar-BQb"/>
                             <constraint firstItem="SYv-Ov-DES" firstAttribute="top" secondItem="qbZ-WE-fjx" secondAttribute="top" id="Km4-el-7TX"/>
+                            <constraint firstAttribute="bottom" secondItem="zOu-Gm-mis" secondAttribute="bottom" id="Ra0-bC-JjK"/>
                             <constraint firstItem="SYv-Ov-DES" firstAttribute="trailing" secondItem="qbZ-WE-fjx" secondAttribute="trailing" id="h6S-9Z-gFQ"/>
                             <constraint firstItem="ez5-wX-yRD" firstAttribute="width" secondItem="9Mn-ic-VsH" secondAttribute="width" id="rcE-9f-liK"/>
                             <constraint firstItem="ez5-wX-yRD" firstAttribute="height" secondItem="9Mn-ic-VsH" secondAttribute="height" multiplier="0.9" priority="250" id="rh8-Zy-me4"/>
+                            <constraint firstItem="zOu-Gm-mis" firstAttribute="leading" secondItem="qbZ-WE-fjx" secondAttribute="leading" id="uXs-Gz-Bko"/>
                             <constraint firstItem="SYv-Ov-DES" firstAttribute="leading" secondItem="qbZ-WE-fjx" secondAttribute="leading" id="uhK-0F-A2W"/>
                             <constraint firstItem="SYv-Ov-DES" firstAttribute="bottom" secondItem="qbZ-WE-fjx" secondAttribute="bottom" id="z88-PA-izJ"/>
                         </constraints>
@@ -165,8 +208,11 @@
                         <outlet property="aboutVehicleView" destination="SFJ-gh-I26" id="s8n-f4-EOD"/>
                         <outlet property="basePriceView" destination="MYN-vU-Q8d" id="F93-qG-fFF"/>
                         <outlet property="bookFeeView" destination="MKL-Yr-MnA" id="827-0S-mN2"/>
+                        <outlet property="brandView" destination="ZOQ-dV-4pc" id="G3g-Ry-nDY"/>
                         <outlet property="carouselView" destination="cTy-UN-KVI" id="E95-XD-KT2"/>
                         <outlet property="colorsView" destination="kXn-F2-IiK" id="THt-YD-oG9"/>
+                        <outlet property="keyFeaturesView" destination="IW1-qy-nvc" id="3ZN-6Z-b5r"/>
+                        <outlet property="proceedButton" destination="kMZ-gs-EtO" id="Vf0-fu-Jad"/>
                         <outlet property="tenureView" destination="xMQ-Re-ibr" id="Wg9-J9-FKF"/>
                         <outlet property="upContentView" destination="G0z-ga-eS0" id="S6c-Lu-7pk"/>
                         <outlet property="yearLabel" destination="4pI-BC-CLg" id="z2u-Yf-uL0"/>
@@ -187,11 +233,17 @@
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

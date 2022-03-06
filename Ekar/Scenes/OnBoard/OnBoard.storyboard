@@ -15,7 +15,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pOK-KB-wRv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UD6-kY-7oN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -66,8 +65,8 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="45p-os-HKx"/>
                                                 </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
                                                     <action selector="didTapSubmitButton:" destination="D5l-I6-8KH" eventType="touchUpInside" id="iDG-BC-KLx"/>
                                                 </connections>

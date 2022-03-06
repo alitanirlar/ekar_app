@@ -12,7 +12,7 @@ import UIKit
     @IBOutlet weak var titleLabel: BaseLabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var dataSource: CollectionViewDataSource<Photo, PhotoCollectionViewCell>?
+    private var dataSource: CollectionViewDataSource<Item, PhotoCollectionViewCell>?
     let compositionalLayout: UICollectionViewCompositionalLayout = {
         let fraction: CGFloat = 1 / 4
         let inset: CGFloat = 2.5
@@ -66,7 +66,7 @@ import UIKit
         
         titleLabel.configure(font: UIFont(name: Font.bold, size: 16)!,
                                             textColor: .black)
-        titleLabel.text = "About the Vehicle"
+        titleLabel.text = "about.the.vehicle.title".localized
         
         collectionView.registerCustom(customCell: PhotoCollectionViewCell.self)
         collectionView.collectionViewLayout = compositionalLayout
@@ -79,11 +79,11 @@ import UIKit
     }
     
     
-    public func setInitValue(data: [Photo]) {
+    public func setInitValue(data: [Item]) {
         displayAbout(data: data)
     }
     
-    private func displayAbout(data: [Photo]) {
+    private func displayAbout(data: [Item]) {
         
         dataSource = .make(for: data,
                               reuseIdentifier: String(describing: PhotoCollectionViewCell.self), align: .center)

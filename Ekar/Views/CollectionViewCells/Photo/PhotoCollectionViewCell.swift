@@ -21,13 +21,14 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     func set(title: String? = nil,
                    photo: UIImage? = nil,
-                   align: NSTextAlignment = .center) {
+                   align: NSTextAlignment = .center,
+             backgroundColor: UIColor) {
         titleLabel.isHidden = title == nil
         photoImageView.isHidden = photo == nil
         titleLabel.text = title
         titleLabel.textAlignment = align
         photoImageView.image = photo
-        self.backgroundColor = .secondaryColor
+        self.backgroundColor = backgroundColor
     }
     
 }

@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Ekar
+
+  Created by Ali TANIRLAR on 6.03.2022.
+  
+*/
+
+
+"dialog.error.title" = "Error";
+"dialog.success.title" = "Success";
+"dialog.ok.button" = "OK";
+"attention.dialog.title" = "Attention";
+
+//MARK: - Onboard
+"comment.placeholder" = "Everthing looks great!";
+"take.photo.message" = "Please take a photo";
+"submit.button.title" = "Submit";
+"explanation.message" = "Please upload clear photos of the vehicle to avoid liability of any damages cause before starting reservation";
+"thank.you.message" = "Thank you for choosing ekar";
+"leave.comment.warning" = "Please leave a comment";
+
+//MARK: - Vehicle
+"how.works.title" = "How Works?";
+"toast.messages" = "toast messages";
+"proceed.button.title" = "Proceed with your selection";
+
+"about.the.vehicle.title" = "About the Vehicle";
+"book.fee.title" = "Book Fee";
+"how.contract.works.button.title" = "how contract works";
+"base.price.title" = "Base Price";
+"contract.length.title" = "Contract Length";
+"available.colors.title" = "Available colors";
+"tenure.title" = "Tenure";
+"contract.legth.title" = "1 to 9 Months";

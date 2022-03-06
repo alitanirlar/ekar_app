@@ -15,11 +15,11 @@ enum OnBoardModels {
         struct Request {}
         
         struct Response {
-            let list: [Photo]
+            let list: [Item]
         }
         
         struct ViewModel {
-            let list: [Photo]
+            let list: [Item]
         }
     }
     

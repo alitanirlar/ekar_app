@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TenureView" customModule="Ekar" customModuleProvider="target">
             <connections>
+                <outlet property="contractLengthLabel" destination="zgB-sL-0xu" id="5Rd-AH-L2F"/>
                 <outlet property="saleContentView" destination="I6c-fb-Obg" id="lZ2-LH-2Fi"/>
                 <outlet property="saleLabel" destination="9cP-8v-SFG" id="KVU-VM-0W3"/>
                 <outlet property="slider" destination="GeP-m9-gsg" id="S0s-AF-q6c"/>

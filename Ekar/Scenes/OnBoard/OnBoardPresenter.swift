@@ -30,12 +30,13 @@ final class OnBoardPresenter: OnBoardPresentationLogic {
     }
     
     func presentError(response: GenericResponseModels.Message.Response) {
-        let viewModel = GenericResponseModels.Message.ViewModel(title: "Error", message: response.message)
+        let viewModel = GenericResponseModels.Message.ViewModel(title: "dialog.error.title".localized,
+                                                                message: response.message)
         viewController?.displayError(viewModel: viewModel)
     }
     
     func presentPostCommentSuccess(response: GenericResponseModels.Message.Response) {
-        let viewModel = GenericResponseModels.Message.ViewModel(title: "Success",  message: response.message)
+        let viewModel = GenericResponseModels.Message.ViewModel(title: "dialog.success.title".localized,  message: response.message)
         viewController?.displayCommentSuccess(viewModel: viewModel)    }
     //
 }

@@ -15,7 +15,7 @@ import UIKit
     @IBOutlet weak var titleLabel: BaseLabel!
     @IBOutlet weak var currencyTypeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var howContactWorksButton: ActionButton!
+    @IBOutlet weak var howContractWorksButton: ActionButton!
     
     var didTapAction: (() -> Void)?
     
@@ -53,18 +53,18 @@ import UIKit
         titleLabel.configure(font: UIFont(name: Font.bold,
                                           size: 12)!,
                              textColor: .black)
-        titleLabel.text = "Booking Fee"
+        titleLabel.text = "book.fee.title".localized
         currencyTypeLabel.text = ""
         currencyTypeLabel.font = UIFont(name: Font.medium, size: 10)
         
         priceLabel.text = ""
         priceLabel.font = UIFont(name: Font.medium, size: 28)
         
-        howContactWorksButton.configure(backgroundColor: .white,
-                                        borderWitdth: 1.0, title: "how contract works",
+        howContractWorksButton.configure(backgroundColor: .white,
+                                         borderWitdth: 1.0, title: "how.contract.works.button.title".localized,
                                         titleColor: .primaryColor,
                                         font: UIFont(name: Font.bold,size: 12)!)
-        howContactWorksButton.addTarget(self, action: #selector(didTapHowWorksButton), for: .touchUpInside)
+        howContractWorksButton.addTarget(self, action: #selector(didTapHowWorksButton), for: .touchUpInside)
         
         
     }

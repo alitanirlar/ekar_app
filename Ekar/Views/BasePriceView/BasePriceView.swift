@@ -70,8 +70,8 @@ import UIKit
     
     
     public func setInitValue(price: String, currencyType: String, contractUnit: String, contractLenght: String) {
-        baseTitleLabel.text = "Base Price"
-        contractTitleLabel.text = "Contract Length"
+        baseTitleLabel.text = "base.price.title".localized
+        contractTitleLabel.text = "contract.length.title".localized
         priceLabel.text = price
         currencyTypeLabel.text = currencyType
         contractUnitLabel.text = contractUnit

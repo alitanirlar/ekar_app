@@ -20,7 +20,7 @@ public class ViewUtils {
                                       message: message,
                                       preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "dialog.ok.button",
+        alert.addAction(UIAlertAction(title: "dialog.ok.button".localized,
                                       style: UIAlertAction.Style.default,
                                       handler: okButtonAction))
         vc.present(alert, animated: true, completion: nil)

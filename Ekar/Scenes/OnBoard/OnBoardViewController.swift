@@ -89,8 +89,8 @@ final class OnBoardViewController: UIViewController {
         commentView.backgroundColor = .white
         commentView.delegate = self
         
-        submitButton.configure(title: "Submit")
-        explanationLabel.text = "Please upload clear photos of the vehicle to avoid liability of any damages cause before starting reservation"
+        submitButton.configure(title: "submit.button.title".localized)
+        explanationLabel.text = "explanation.message".localized
         
     }
     
@@ -114,7 +114,7 @@ extension OnBoardViewController: OnBoardDisplayLogic {
     func displayCommentSuccess(viewModel: GenericResponseModels.Message.ViewModel) {
         self.display(title: viewModel.message, message: viewModel.message)
         self.comment = nil
-        self.commentView.clear(with: "Everthing looks great!")
+        self.commentView.clear(with: "comment.placeholder".localized )
     }
     
     func displayError(viewModel: GenericResponseModels.Message.ViewModel) {
@@ -126,8 +126,8 @@ extension OnBoardViewController: OnBoardDisplayLogic {
 
 extension OnBoardViewController: PhotosViewDelegate {
     func photosView(_ didSelectItem: IndexPath) {
-        ViewUtils.displayMessage(title: "Attention",
-                                 message: "Please take a photo",
+        ViewUtils.displayMessage(title: "attention.dialog.title".localized,
+                                 message: "take.photo.message".localized,
                                  vc: self) { _ in
             
         }

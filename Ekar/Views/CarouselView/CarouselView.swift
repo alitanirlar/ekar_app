@@ -13,7 +13,7 @@ import UIKit
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    private var dataSource: CollectionViewDataSource<Photo, PhotoCollectionViewCell>?
+    private var dataSource: CollectionViewDataSource<Item, PhotoCollectionViewCell>?
     
     let flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -60,14 +60,15 @@ import UIKit
         pageControl.currentPageIndicatorTintColor = .primaryColor
     }
     
-    public func setInitValue(data: [Photo]) {
+    public func setInitValue(data: [Item]) {
         displayPhotos(data: data)
     }
     
-    private func displayPhotos(data: [Photo]) {
+    private func displayPhotos(data: [Item]) {
         dataSource = .make(for: data,
                               reuseIdentifier: String(describing: PhotoCollectionViewCell.self),
-                              align: .center)
+                              align: .center,
+                              backgroundColor: .secondaryColor)
         collectionView.dataSource = dataSource
         collectionView.reloadData()
         pageControl.numberOfPages = data.count

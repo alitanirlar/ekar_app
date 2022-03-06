@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookFeeView" customModule="Ekar" customModuleProvider="target">
             <connections>
                 <outlet property="currencyTypeLabel" destination="WOd-Jq-UW2" id="IU4-Ed-zMl"/>
-                <outlet property="howContactWorksButton" destination="Qzz-Df-OHN" id="KNT-kV-e2a"/>
+                <outlet property="howContractWorksButton" destination="Qzz-Df-OHN" id="KNT-kV-e2a"/>
                 <outlet property="priceLabel" destination="VR8-KV-tJ6" id="Rd2-J4-xxO"/>
                 <outlet property="titleLabel" destination="GXi-SJ-DSC" id="3qc-ws-mG0"/>
             </connections>

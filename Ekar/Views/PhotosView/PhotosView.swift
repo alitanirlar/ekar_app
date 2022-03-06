@@ -22,7 +22,7 @@ protocol PhotosViewDelegate: AnyObject {
     
     
     
-    private var dataSource: CollectionViewDataSource<Photo, PhotoCollectionViewCell>?
+    private var dataSource: CollectionViewDataSource<Item, PhotoCollectionViewCell>?
     private let compositionalLayout: UICollectionViewCompositionalLayout = {
         let fraction: CGFloat = 1 / 2
         let inset: CGFloat = 2.5
@@ -88,11 +88,11 @@ protocol PhotosViewDelegate: AnyObject {
         collectionView.delegate = self
     }
     
-    public func setInitValue(data: [Photo]) {
+    public func setInitValue(data: [Item]) {
         displayPhotos(data: data)
     }
     
-    private func displayPhotos(data: [Photo]) {
+    private func displayPhotos(data: [Item]) {
         dataSource = .make(for: data,
                               reuseIdentifier: String(describing: PhotoCollectionViewCell.self),
                               align: .center)

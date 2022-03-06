@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41169A2227D526CB00444D52 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41169A2127D526CB00444D52 /* String+Extensions.swift */; };
+		41169A2627D5277E00444D52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41169A2827D5277E00444D52 /* Localizable.strings */; };
 		411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */; };
 		411E5FBE27D3CC6800C8F05D /* VehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FB727D3CC6800C8F05D /* VehiclePresenter.swift */; };
 		411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FB827D3CC6800C8F05D /* VehicleWorker.swift */; };
@@ -20,7 +22,6 @@
 		411E5FCF27D3E12A00C8F05D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 411E5FCE27D3E12A00C8F05D /* Alamofire */; };
 		411E5FD127D3E1B100C8F05D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD027D3E1B100C8F05D /* BaseService.swift */; };
 		411E5FD327D3E26200C8F05D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD227D3E26200C8F05D /* Constants.swift */; };
-		411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */; };
 		411E5FD827D3FFE600C8F05D /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E5FD727D3FFE600C8F05D /* CarouselView.swift */; };
 		411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FD927D4005300C8F05D /* CarouselView.xib */; };
 		411E5FDD27D4155200C8F05D /* ColorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FDC27D4155200C8F05D /* ColorsView.xib */; };
@@ -83,13 +84,18 @@
 		41C8E14827D292F2009EF417 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C8E14627D292F2009EF417 /* PhotoTableViewCell.xib */; };
 		41C8E14E27D2A3B5009EF417 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41C8E14D27D2A3B5009EF417 /* IQKeyboardManagerSwift */; };
 		41C8E15127D2B888009EF417 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */; };
-		41C8E15627D2BA84009EF417 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15527D2BA84009EF417 /* Photo.swift */; };
+		41C8E15627D2BA84009EF417 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15527D2BA84009EF417 /* Item.swift */; };
 		41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */; };
 		41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15927D2C6A7009EF417 /* ViewUtils.swift */; };
 		41C8E15C27D2CBFE009EF417 /* GenericResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E15B27D2CBFE009EF417 /* GenericResponseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41169A2127D526CB00444D52 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		41169A2727D5277E00444D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41169A2927D5285400444D52 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41169A2A27D528D400444D52 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		41169A2B27D528D400444D52 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
 		411E5FB727D3CC6800C8F05D /* VehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePresenter.swift; sourceTree = "<group>"; };
 		411E5FB827D3CC6800C8F05D /* VehicleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleWorker.swift; sourceTree = "<group>"; };
@@ -102,7 +108,6 @@
 		411E5FCB27D3E0FF00C8F05D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		411E5FD027D3E1B100C8F05D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		411E5FD227D3E26200C8F05D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		411E5FD727D3FFE600C8F05D /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		411E5FD927D4005300C8F05D /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		411E5FDC27D4155200C8F05D /* ColorsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorsView.xib; sourceTree = "<group>"; };
@@ -166,7 +171,7 @@
 		41C8E14527D292F2009EF417 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		41C8E14627D292F2009EF417 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		41C8E15027D2B888009EF417 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
-		41C8E15527D2BA84009EF417 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		41C8E15527D2BA84009EF417 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		41C8E15727D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewDataSource+Extensions.swift"; sourceTree = "<group>"; };
 		41C8E15927D2C6A7009EF417 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		41C8E15B27D2CBFE009EF417 /* GenericResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponseModels.swift; sourceTree = "<group>"; };
@@ -185,6 +190,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41169A2327D526F800444D52 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				41169A2827D5277E00444D52 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		411E5FB527D3CC5600C8F05D /* Vehicle */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +227,6 @@
 				411E5FCB27D3E0FF00C8F05D /* ApiManager.swift */,
 				411E5FD027D3E1B100C8F05D /* BaseService.swift */,
 				411E5FD227D3E26200C8F05D /* Constants.swift */,
-				411E5FD427D3E94A00C8F05D /* NetworkLogger.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -336,6 +348,7 @@
 		41AB29A427D118EA007681C2 /* Ekar */ = {
 			isa = PBXGroup;
 			children = (
+				41169A2327D526F800444D52 /* Localization */,
 				41AB29B327D118EB007681C2 /* Info.plist */,
 				41AB29A527D118EA007681C2 /* AppDelegate.swift */,
 				41AB29A727D118EA007681C2 /* SceneDelegate.swift */,
@@ -442,6 +455,7 @@
 				41AB29E027D15AE0007681C2 /* UIStoryboard+Extensions.swift */,
 				41C8E14227D28C7C009EF417 /* UITableView+Extensions.swift */,
 				411E5FC427D3D04A00C8F05D /* UIView+Extensions.swift */,
+				41169A2127D526CB00444D52 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -538,7 +552,7 @@
 		41C8E15427D2BA6F009EF417 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				41C8E15527D2BA84009EF417 /* Photo.swift */,
+				41C8E15527D2BA84009EF417 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -589,6 +603,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				tr,
 			);
 			mainGroup = 41AB299927D118EA007681C2;
 			packageReferences = (
@@ -614,6 +630,7 @@
 				41C8E12A27D25146009EF417 /* CommentView.xib in Resources */,
 				411E5FDA27D4005300C8F05D /* CarouselView.xib in Resources */,
 				4150143F27D4387A00BB695A /* TenureView.xib in Resources */,
+				41169A2627D5277E00444D52 /* Localizable.strings in Resources */,
 				41AB29AF27D118EB007681C2 /* Assets.xcassets in Resources */,
 				4150144727D47BF400BB695A /* BookFeeView.xib in Resources */,
 				411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */,
@@ -654,7 +671,7 @@
 				41AB29C427D11969007681C2 /* MapViewRouter.swift in Sources */,
 				41C8E12F27D26176009EF417 /* PhotosView.swift in Sources */,
 				41A1752F27D49833003B001E /* KeyFeaturesView.swift in Sources */,
-				41C8E15627D2BA84009EF417 /* Photo.swift in Sources */,
+				41C8E15627D2BA84009EF417 /* Item.swift in Sources */,
 				4150144527D47BBE00BB695A /* BookFeeView.swift in Sources */,
 				411E5FBF27D3CC6800C8F05D /* VehicleWorker.swift in Sources */,
 				41AB29C527D11969007681C2 /* MapViewModels.swift in Sources */,
@@ -669,7 +686,6 @@
 				411E5FDF27D4156C00C8F05D /* ColorsView.swift in Sources */,
 				41C8E14327D28C7C009EF417 /* UITableView+Extensions.swift in Sources */,
 				41AB29C327D11969007681C2 /* MapViewWorker.swift in Sources */,
-				411E5FD527D3E94A00C8F05D /* NetworkLogger.swift in Sources */,
 				411E5FD827D3FFE600C8F05D /* CarouselView.swift in Sources */,
 				411E5FD327D3E26200C8F05D /* Constants.swift in Sources */,
 				411E5FC527D3D04A00C8F05D /* UIView+Extensions.swift in Sources */,
@@ -678,6 +694,7 @@
 				411E5FC227D3CC6800C8F05D /* VehicleViewController.swift in Sources */,
 				41C8E12427D24EA7009EF417 /* Font.swift in Sources */,
 				41C8E15A27D2C6A7009EF417 /* ViewUtils.swift in Sources */,
+				41169A2227D526CB00444D52 /* String+Extensions.swift in Sources */,
 				41C8E15827D2BD4D009EF417 /* CollectionViewDataSource+Extensions.swift in Sources */,
 				41AB29E827D1674E007681C2 /* UIColor+Extensions.swift in Sources */,
 				411E5FC127D3CC6800C8F05D /* VehicleModels.swift in Sources */,
@@ -703,10 +720,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		41169A2827D5277E00444D52 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41169A2727D5277E00444D52 /* en */,
+				41169A2927D5285400444D52 /* ar */,
+				41169A2B27D528D400444D52 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		41AB29B027D118EB007681C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				41AB29B127D118EB007681C2 /* Base */,
+				41169A2A27D528D400444D52 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -718,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -779,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

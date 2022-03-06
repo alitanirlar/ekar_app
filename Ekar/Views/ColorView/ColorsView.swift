@@ -50,7 +50,7 @@ import UIKit
     
     private func displayColors(data: [UIColor]) {
         
-        titleLabel.text = "Available colors"
+        titleLabel.text = "available.colors.title".localized
         titleLabel.font = UIFont(name: Font.regular, size: 12)
         stackViewWidth.constant = CGFloat((data.count - 1) * 16)
         data.forEach {

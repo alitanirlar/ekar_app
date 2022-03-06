@@ -16,8 +16,6 @@ enum Constants {
     
     enum UrlPath: String {
         case specs = "/specs"
-        case images = "/images"
-        case pic = "/pic"
         var fullUrl: String {
             return Constants.Network.baseUrl + self.rawValue
         }

@@ -98,8 +98,8 @@ final class VehicleViewController: UIViewController {
         tenureView.delegate = self
         bookFeeView.backgroundColor = .clear
         bookFeeView.didTapAction = {
-            ViewUtils.displayMessage(title: "How Works?",
-                                     message: "toast messages", vc: self)
+            ViewUtils.displayMessage(title: "how.works.title".localized,
+                                     message: "toast.messages".localized, vc: self)
         }
 
         yearLabel.text = ""
@@ -108,7 +108,7 @@ final class VehicleViewController: UIViewController {
         aboutVehicleView.backgroundColor = .clear
         keyFeaturesView.backgroundColor = .clear
         brandView.backgroundColor = .clear
-        proceedButton.configure(title: "Proceed with your selection", titleColor: .white, font: UIFont(name: Font.bold, size: 14)!)
+        proceedButton.configure(title: "proceed.button.title".localized, titleColor: .white, font: UIFont(name: Font.bold, size: 14)!)
  
     }
     

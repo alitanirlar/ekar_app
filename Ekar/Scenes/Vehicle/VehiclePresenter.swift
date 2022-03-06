@@ -26,9 +26,12 @@ final class VehiclePresenter: VehiclePresentationLogic {
     
     func presentVehicleSpecs(response: VehicleModels.VehicleSpecs.Response) {
         
-        let aboutData =  [Photo(title: "3L Engine", image: UIImage(named: "engine_icon")),Photo(title: "2 Seats", image: UIImage(named: "seat_icon")),Photo(title: "Manual", image: UIImage(named: "gear_icon")!),Photo(title: "Petrol", image: UIImage(named: "petrol_icon"))]
+        let aboutData =  [Item(title: "3L Engine", image: UIImage(named: "engine_icon")),
+                          Item(title: "2 Seats", image: UIImage(named: "seat_icon")),
+                          Item(title: response.response.attributes?.transmissionShort ?? "", image: UIImage(named: "gear_icon")!),
+                          Item(title: "Petrol", image: UIImage(named: "petrol_icon"))]
         
-        let keyFeatues = [ "3L Engine 3L Engine", "2 Seats 3L Engine", "Manual","Petrol","Petrol","Petrol","Petrol", "3L Engine 3L Engine", "2 Seats 3L Engine",]
+        let keyFeatues = [ "Keyless Entry", "Bluetooth", "Power Windows","ABS Break with EBD","AUX / USB Jack","AM / FM"]
         
         let viewModel = VehicleModels.VehicleSpecs.ViewModel(year: "Year - \(response.response.attributes?.year ?? "") ",
                                                              make: response.response.attributes?.make ?? "",
@@ -40,8 +43,8 @@ final class VehiclePresenter: VehiclePresentationLogic {
                                                              priceUnit: "AED / MONTH",
                                                              bookFee: "120",
                                                              bookCurrency: "AED",
-                                                             carouselPhotos: [Photo(image: UIImage(named: "carousel") ?? UIImage()) ,
-                                                                              Photo(image: UIImage(named: "carousel") ?? UIImage())],
+                                                             carouselPhotos: [Item(image: UIImage(named: "carousel") ?? UIImage()) ,
+                                                                              Item(image: UIImage(named: "carousel") ?? UIImage())],
                                                              colors: [.red, .primaryColor,.black],
                                                              aboutData: aboutData,
                                                              keyFeatures: keyFeatues
@@ -51,7 +54,7 @@ final class VehiclePresenter: VehiclePresentationLogic {
     }
     
     func presentError(response: GenericResponseModels.Message.Response) {
-        let viewModel = GenericResponseModels.Message.ViewModel(title: "Error", message: response.message)
+        let viewModel = GenericResponseModels.Message.ViewModel(title: "dialog.error.title".localized, message: response.message)
         viewController?.displayError(viewModel: viewModel)
     }
     

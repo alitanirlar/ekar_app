@@ -8,14 +8,15 @@
 import Foundation
 import UIKit
 
-extension CollectionViewDataSource where T == Photo {
-    static func make(for photos: [Photo], reuseIdentifier: String, align: NSTextAlignment = .left) -> CollectionViewDataSource {
+extension CollectionViewDataSource where T == Item {
+    static func make(for photos: [Item], reuseIdentifier: String, align: NSTextAlignment = .left, backgroundColor: UIColor = .white) -> CollectionViewDataSource {
         return CollectionViewDataSource( models: photos, reuseIdentifier: reuseIdentifier ) { (photo, cell) in
             if let cell = cell as? PhotoCollectionViewCell {
                 
                 cell.set(title: photo.title,
                          photo: photo.image,
-                         align: align)
+                         align: align,
+                         backgroundColor: backgroundColor)
                 
             }
             cell.layoutIfNeeded()

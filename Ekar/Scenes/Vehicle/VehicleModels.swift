@@ -32,9 +32,9 @@ enum VehicleModels {
             let priceUnit: String
             let bookFee: String
             let bookCurrency: String
-            let carouselPhotos: [Photo]
+            let carouselPhotos: [Item]
             let colors: [UIColor]
-            let aboutData: [Photo]
+            let aboutData: [Item]
             let keyFeatures: [String]
             
             

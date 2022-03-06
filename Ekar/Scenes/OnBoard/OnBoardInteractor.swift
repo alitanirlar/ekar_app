@@ -30,10 +30,10 @@ final class OnBoardInteractor: OnBoardBusinessLogic, OnBoardDataStore {
     
     // MARK: - Business Logic
     func fetchPhotos(request: OnBoardModels.Photos.Request) {
-        let data = [Photo(title: "FRONT/LEFT", image: UIImage(named: "front_left_icon")!),
-                    Photo(title: "FRONT/RIGHT", image: UIImage(named: "front_right_icon")!),
-                    Photo(title: "BACK/LEFT", image: UIImage(named: "back_left_icon")!),
-                    Photo(title: "BACK/RIGHT", image: UIImage(named: "back_right_icon")!)]
+        let data = [Item(title: "FRONT/LEFT", image: UIImage(named: "front_left_icon")!),
+                    Item(title: "FRONT/RIGHT", image: UIImage(named: "front_right_icon")!),
+                    Item(title: "BACK/LEFT", image: UIImage(named: "back_left_icon")!),
+                    Item(title: "BACK/RIGHT", image: UIImage(named: "back_right_icon")!)]
         
         let response = OnBoardModels.Photos.Response(list: data)
         presenter?.presentPhotos(response: response)
@@ -43,11 +43,11 @@ final class OnBoardInteractor: OnBoardBusinessLogic, OnBoardDataStore {
         if let comment = request.value, comment != "" {
             worker.postComment(request: request) { [weak self ] success in
                 if success {
-                    self?.presenter?.presentPostCommentSuccess(response: GenericResponseModels.Message.Response(message: "Thank you for choosing ekar"))
+                    self?.presenter?.presentPostCommentSuccess(response: GenericResponseModels.Message.Response(message: "thank.you.message".localized))
                 }
             }
         } else {
-            let response = GenericResponseModels.Message.Response(message: "Please leave a comment")
+            let response = GenericResponseModels.Message.Response(message: "leave.comment.warning".localized)
             presenter?.presentError(response: response)
             
         }

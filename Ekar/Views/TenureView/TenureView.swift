@@ -15,6 +15,7 @@ protocol TenureViewDelegate: AnyObject {
     
     //    MARK: - Outlets
     @IBOutlet weak var titleLabel: BaseLabel!
+    @IBOutlet weak var contractLengthLabel: BaseLabel!
     @IBOutlet weak var saleLabel: BaseLabel!
     @IBOutlet weak var saleContentView: UIView!
     
@@ -52,6 +53,14 @@ protocol TenureViewDelegate: AnyObject {
         view.backgroundColor = .clear
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
+        
+        titleLabel.configure(font: UIFont(name: Font.regular, size: 12)!)
+        titleLabel.text = "tenure.title".localized
+
+        
+        contractLengthLabel.configure(font: UIFont(name: Font.medium, size: 12)!)
+        contractLengthLabel.text = "contract.legth.title".localized
+
         
         saleContentView.layer.cornerRadius = saleContentView.frame.height / 2.0
         saleContentView.layer.masksToBounds = true

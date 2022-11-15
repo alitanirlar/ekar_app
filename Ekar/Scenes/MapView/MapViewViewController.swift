@@ -88,17 +88,11 @@ final class MapViewViewController: BaseViewController {
         let status = CLLocationManager.authorizationStatus()
         
         switch status {
-        case .authorizedAlways, .authorizedWhenInUse:
-            return
-            
-        case .denied, .restricted:
-            print("location access denied")
-            
-        default:
-            locationManager.requestWhenInUseAuthorization()
+        case .authorizedAlways, .authorizedWhenInUse: return
+        case .denied, .restricted: print("location access denied")
+        default: locationManager.requestWhenInUseAuthorization()
         }
     }
-    
     
     // MARK: - UI Actions
     
@@ -115,7 +109,6 @@ extension MapViewViewController: MapViewDisplayLogic {
     func displayNearestCar(viewModel: MapViewModels.NearestCar.ViewModel) {
         mapView.addAnnotation(viewModel.location)
     }
-    
 }
 
 // MARK: - MKMapViewDelegate
@@ -141,6 +134,4 @@ extension MapViewViewController: MKMapViewDelegate {
         router?.routeToOnBoard()
         mapView.selectedAnnotations.removeAll()
     }
-    
-    
 }

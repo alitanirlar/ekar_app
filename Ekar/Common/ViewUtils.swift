@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 public typealias UIAlertActionHandler = ((UIAlertAction) -> Void)?
 
@@ -24,5 +25,13 @@ public class ViewUtils {
                                       style: UIAlertAction.Style.default,
                                       handler: okButtonAction))
         vc.present(alert, animated: true, completion: nil)
+    }
+    
+   static func showHud() {
+        ProgressHUD.show()
+    }
+    
+    static func hideHud() {
+        ProgressHUD.dismiss()
     }
 }

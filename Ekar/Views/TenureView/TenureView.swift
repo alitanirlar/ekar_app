@@ -70,7 +70,7 @@ protocol TenureViewDelegate: AnyObject {
                                          size: 10)!,
                             textColor: .white)
         saleLabel.textAlignment = .center
-        saleLabel.text = "SAVINGS OF AED 1,500"
+        saleLabel.text = "sample.saving".localized
         
         
         sliderLabels.forEach{
@@ -81,10 +81,6 @@ protocol TenureViewDelegate: AnyObject {
         slider.minimumValue = 1
         slider.maximumValue = 9
         
-        
-    }
-    
-    public func setInitValue() {
         
     }
     

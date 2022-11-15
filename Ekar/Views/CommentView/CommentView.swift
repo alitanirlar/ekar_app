@@ -74,8 +74,6 @@ protocol CommentViewDelegate: AnyObject {
     @objc private func textFieldDidChange() {
         delegate?.commentView(commentTextField.text)
     }
-    
-    
 }
 
 extension CommentView: UITextFieldDelegate {

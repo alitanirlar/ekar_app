@@ -54,7 +54,7 @@ import UIKit
         
         titleLabel.configure(font: UIFont(name: Font.bold, size: 12)!,
                                             textColor: .black)
-        titleLabel.text = "Key Features"
+        titleLabel.text = "key.features".localized
         
         collectionView.registerCustom(customCell: TagCollectionViewCell.self)
         collectionView.collectionViewLayout = layout

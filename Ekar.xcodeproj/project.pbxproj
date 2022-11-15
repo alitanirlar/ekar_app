@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171A704F29235A0400BC3FC1 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 171A704E29235A0400BC3FC1 /* ProgressHUD */; };
 		41169A2227D526CB00444D52 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41169A2127D526CB00444D52 /* String+Extensions.swift */; };
 		41169A2627D5277E00444D52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41169A2827D5277E00444D52 /* Localizable.strings */; };
 		411E5FBD27D3CC6800C8F05D /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411E5FB627D3CC6800C8F05D /* Vehicle.storyboard */; };
@@ -182,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171A704F29235A0400BC3FC1 /* ProgressHUD in Frameworks */,
 				41C8E14E27D2A3B5009EF417 /* IQKeyboardManagerSwift in Frameworks */,
 				411E5FCF27D3E12A00C8F05D /* Alamofire in Frameworks */,
 			);
@@ -576,6 +578,7 @@
 			packageProductDependencies = (
 				41C8E14D27D2A3B5009EF417 /* IQKeyboardManagerSwift */,
 				411E5FCE27D3E12A00C8F05D /* Alamofire */,
+				171A704E29235A0400BC3FC1 /* ProgressHUD */,
 			);
 			productName = Ekar;
 			productReference = 41AB29A227D118EA007681C2 /* Ekar.app */;
@@ -610,6 +613,7 @@
 			packageReferences = (
 				41C8E14C27D2A3B5009EF417 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				171A704D29235A0400BC3FC1 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 41AB29A327D118EA007681C2 /* Products */;
 			projectDirPath = "";
@@ -942,6 +946,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		171A704D29235A0400BC3FC1 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
 		411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -961,6 +973,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		171A704E29235A0400BC3FC1 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171A704D29235A0400BC3FC1 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
 		411E5FCE27D3E12A00C8F05D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 411E5FCD27D3E12A00C8F05D /* XCRemoteSwiftPackageReference "Alamofire" */;

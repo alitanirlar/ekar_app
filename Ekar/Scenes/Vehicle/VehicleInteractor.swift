@@ -24,17 +24,24 @@ final class VehicleInteractor: VehicleBusinessLogic, VehicleDataStore {
     
     // MARK: - Private Properties
     func getVehicleSpecs(request: VehicleModels.VehicleSpecs.Request) {
-        worker.getVehicleSpecs(request: request) { [weak self ] response in
-            switch response {
-            case .success(let result):
-                let response = VehicleModels.VehicleSpecs.Response(response: result)
-                self?.presenter?.presentVehicleSpecs(response: response)
-            case .failure(let error):
-                let response = GenericResponseModels.Message.Response(message: error.localizedDescription)
-                self?.presenter?.presentError(response: response)
+        ViewUtils.showHud()
+        let queue = DispatchQueue(label: "com.kodworks.queue", qos: .background, attributes: .concurrent)
+        queue.async {  [weak self ] in
+            self?.worker.getVehicleSpecs(request: request) { response in
+                DispatchQueue.main.async {
+                    ViewUtils.hideHud()
+                }
+                switch response {
+                case .success(let result):
+                    let response = VehicleModels.VehicleSpecs.Response(response: result)
+                    self?.presenter?.presentVehicleSpecs(response: response)
+                case .failure(let error):
+                    let response = GenericResponseModels.Message.Response(message: error.localizedDescription)
+                    self?.presenter?.presentError(response: response)
+                }
             }
+            
         }
-        
     }
     //
     

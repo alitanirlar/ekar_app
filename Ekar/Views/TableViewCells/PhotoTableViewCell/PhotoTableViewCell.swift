@@ -9,5 +9,4 @@ import UIKit
 
 class PhotoTableViewCell: BaseTableViewCell {
     @IBOutlet weak var photosView: PhotosView!
-    
 }

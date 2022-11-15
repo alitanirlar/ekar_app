@@ -10,9 +10,7 @@ import UIKit
 class TextTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var messageLabel: BaseLabel!
-    
     func set(text: String) {
         messageLabel.text = text
     }
-    
 }

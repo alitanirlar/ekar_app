@@ -28,7 +28,7 @@ final class MapViewInteractor: MapViewBusinessLogic, MapViewDataStore {
     
     // MARK: - Private Properties
     private var currentLocation = CLLocationCoordinate2D(latitude: 25.23183,
-                                                       longitude: 55.323976)
+                                                         longitude: 55.323976)
     private let delta = 0.01
     
     private var nearestCarLocation = CLLocationCoordinate2D(latitude: 25.23183,

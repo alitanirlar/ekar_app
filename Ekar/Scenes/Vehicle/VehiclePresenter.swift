@@ -28,7 +28,7 @@ final class VehiclePresenter: VehiclePresentationLogic {
         
         let aboutData =  [Item(title: "3L Engine", image: UIImage(named: "engine_icon")),
                           Item(title: "2 Seats", image: UIImage(named: "seat_icon")),
-                          Item(title: response.response.attributes?.transmissionShort ?? "", image: UIImage(named: "gear_icon")!),
+                          Item(title: response.response.attributes?.transmissionShort ?? "", image: UIImage(named: "gear_icon") ?? UIImage()),
                           Item(title: "Petrol", image: UIImage(named: "petrol_icon"))]
         
         let keyFeatues = [ "Keyless Entry", "Bluetooth", "Power Windows","ABS Break with EBD","AUX / USB Jack","AM / FM"]
@@ -36,7 +36,8 @@ final class VehiclePresenter: VehiclePresentationLogic {
         let viewModel = VehicleModels.VehicleSpecs.ViewModel(year: "Year - \(response.response.attributes?.year ?? "") ",
                                                              make: response.response.attributes?.make ?? "",
                                                              model: response.response.attributes?.model ?? "",
-                                                             logo: UIImage(named: "toyota_logo")!, style: response.response.attributes?.style ?? "",
+                                                             logo: UIImage(named: "toyota_logo") ?? UIImage(),
+                                                             style: response.response.attributes?.style ?? "",
                                                              contractLength: "3",
                                                              contractUnit: "MONTH",
                                                              basePrice: "1,553",

@@ -12,7 +12,8 @@ class TagFlowLayout: UICollectionViewFlowLayout {
          let attributesForElementsInRect = super.layoutAttributesForElements(in: rect)
          var newAttributesForElementsInRect = [UICollectionViewLayoutAttributes]()
          var leftMargin: CGFloat = 0.0
-         for attributes in attributesForElementsInRect! {
+        guard let attributesForElementsInRect else { return nil }
+         for attributes in attributesForElementsInRect {
              if (attributes.frame.origin.x == self.sectionInset.left) {
                  leftMargin = self.sectionInset.left
              } else {

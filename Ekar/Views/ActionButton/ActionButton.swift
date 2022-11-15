@@ -26,7 +26,7 @@ class ActionButton: UIButton {
                    title: String = "",
                    titleColor: UIColor = .white,
                    font: UIFont = UIFont(name: Font.regular,
-                                         size: 20)!) {
+                                         size: 20) ?? UIFont.systemFont(ofSize: 20)) {
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true

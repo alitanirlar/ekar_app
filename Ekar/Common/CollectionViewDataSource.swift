@@ -30,7 +30,7 @@ class CollectionViewDataSource<T, Cell: UICollectionViewCell>: NSObject, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = models[indexPath.row]
-        let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! Cell
+        guard let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? Cell else { return UICollectionViewCell()}
         cellConfigurator(model, cell)
         return cell
     }

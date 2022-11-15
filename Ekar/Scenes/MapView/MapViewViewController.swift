@@ -125,8 +125,9 @@ extension MapViewViewController: MKMapViewDelegate {
         } else {
             annotationView!.annotation = annotation
         }
-        annotationView?.setImage(named: interactor!.locationMark)
-        
+        if let imageName = interactor?.locationMark {
+            annotationView?.setImage(named: imageName)
+        }
         return annotationView
     }
     

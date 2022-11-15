@@ -51,7 +51,7 @@ import UIKit
         
         
         titleLabel.configure(font: UIFont(name: Font.bold,
-                                          size: 12)!,
+                                          size: 12) ?? UIFont.systemFont(ofSize: 12),
                              textColor: .black)
         titleLabel.text = "book.fee.title".localized
         currencyTypeLabel.text = ""
@@ -63,7 +63,7 @@ import UIKit
         howContractWorksButton.configure(backgroundColor: .white,
                                          borderWitdth: 1.0, title: "how.contract.works.button.title".localized,
                                         titleColor: .primaryColor,
-                                        font: UIFont(name: Font.bold,size: 12)!)
+                                         font: UIFont(name: Font.bold,size: 12) ?? UIFont.systemFont(ofSize: 12))
         howContractWorksButton.addTarget(self, action: #selector(didTapHowWorksButton), for: .touchUpInside)
         
         

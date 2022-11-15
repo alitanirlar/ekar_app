@@ -86,8 +86,8 @@ extension KeyFeaturesView: UICollectionViewDelegate, UICollectionViewDelegateFlo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let tag = keyFeatures[indexPath.row]
-        let font = UIFont(name: Font.regular, size: 12)!
-        let size = tag.size(withAttributes: [NSAttributedString.Key.font: font])
+        let font = UIFont(name: Font.regular, size: 12)
+        let size = tag.size(withAttributes: [NSAttributedString.Key.font: font ?? .systemFont(ofSize: 12)])
         let dynamicCellWidth = size.width
 
         /*

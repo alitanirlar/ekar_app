@@ -19,5 +19,5 @@ public extension NSObject {
 }
 
 public func stringFromClass(aClass: AnyClass) -> String {
-    return NSStringFromClass(aClass).components(separatedBy: ".").last!
+    return NSStringFromClass(aClass).components(separatedBy: ".").last ?? ""
 }

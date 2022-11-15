@@ -17,7 +17,7 @@ class TagCollectionViewCell: UICollectionViewCell {
         self.layer.masksToBounds = true
     }
     func set(tag: String) {
-        tagLabel.configure(font: UIFont(name: Font.regular, size: 12)!, textColor: .black)
+        tagLabel.configure(font: UIFont(name: Font.regular, size: 12) ?? UIFont.systemFont(ofSize: 12), textColor: .black)
         tagLabel.text = tag
         tagLabel.textAlignment = .center
     }

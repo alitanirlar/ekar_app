@@ -25,7 +25,7 @@ class BaseLabel: UILabel {
     }
     
     func configure(font: UIFont = UIFont(name: Font.regular,
-                                         size: 14)!,
+                                         size: 14) ?? UIFont.systemFont(ofSize: 14),
                    textColor: UIColor = .black) {
         self.font = font
         self.textColor = textColor

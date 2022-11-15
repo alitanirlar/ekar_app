@@ -50,7 +50,7 @@ protocol CommentViewDelegate: AnyObject {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
         
-        titleLabel.configure(font: UIFont(name: Font.bold, size: 12)!)
+        titleLabel.configure(font: UIFont(name: Font.bold, size: 12) ?? UIFont.systemFont(ofSize: 12)) 
 
         commentTextField.delegate = self
         commentTextField.addTarget(self,

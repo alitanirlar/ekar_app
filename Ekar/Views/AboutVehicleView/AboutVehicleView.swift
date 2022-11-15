@@ -64,7 +64,7 @@ import UIKit
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
         
-        titleLabel.configure(font: UIFont(name: Font.bold, size: 16)!,
+        titleLabel.configure(font: UIFont(name: Font.bold, size: 16) ?? UIFont.systemFont(ofSize: 16),
                                             textColor: .black)
         titleLabel.text = "about.the.vehicle.title".localized
         

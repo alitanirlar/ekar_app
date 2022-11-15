@@ -54,11 +54,11 @@ protocol TenureViewDelegate: AnyObject {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view)
         
-        titleLabel.configure(font: UIFont(name: Font.regular, size: 12)!)
+        titleLabel.configure(font: UIFont(name: Font.regular, size: 12) ?? UIFont.systemFont(ofSize: 12))
         titleLabel.text = "tenure.title".localized
 
         
-        contractLengthLabel.configure(font: UIFont(name: Font.medium, size: 12)!)
+        contractLengthLabel.configure(font: UIFont(name: Font.medium, size: 12) ?? UIFont.systemFont(ofSize: 12))
         contractLengthLabel.text = "contract.legth.title".localized
 
         
@@ -67,7 +67,7 @@ protocol TenureViewDelegate: AnyObject {
         
         
         saleLabel.configure(font: UIFont(name: Font.regular,
-                                         size: 10)!,
+                                         size: 10) ?? UIFont.systemFont(ofSize: 10),
                             textColor: .white)
         saleLabel.textAlignment = .center
         saleLabel.text = "sample.saving".localized
